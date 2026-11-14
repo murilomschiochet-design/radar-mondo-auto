@@ -1,9 +1,15 @@
 """Procura foto LIVRE no Wikimedia Commons (domínio público ou CC). Uso: python foto_livre.py "busca" [n]"""
 import sys, json, urllib.parse, urllib.request
+import os, ssl
 try:
     import truststore; truststore.inject_into_ssl()
 except ImportError:
     pass
+# na nuvem do Claude a internet passa por um proxy com certificado próprio
+for _ca in ("/root/.ccr/ca-bundle.crt", os.environ.get("SSL_CERT_FILE", "")):
+    if _ca and os.path.exists(_ca):
+        ssl._create_default_https_context = lambda: ssl.create_default_context(cafile=_ca)
+        break
 UA = {"User-Agent": "MondoNewsBot/1.0 (free-image lookup)"}
 API = "https://commons.wikimedia.org/w/api.php"
 def buscar(q, n=8):

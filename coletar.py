@@ -1,9 +1,15 @@
 """Coleta manchetes recentes nas fontes (RSS grátis) -> manchetes.json (+ lista na tela). Uso: python coletar.py [horas=2]"""
 import sys, json, re, time, email.utils, urllib.request, xml.etree.ElementTree as ET, datetime as dt
+import os, ssl
 try:
     import truststore; truststore.inject_into_ssl()
 except ImportError:
     pass
+# na nuvem do Claude a internet passa por um proxy com certificado próprio
+for _ca in ("/root/.ccr/ca-bundle.crt", os.environ.get("SSL_CERT_FILE", "")):
+    if _ca and os.path.exists(_ca):
+        ssl._create_default_https_context = lambda: ssl.create_default_context(cafile=_ca)
+        break
 FEEDS = {
  "ANSA Mondo": "https://www.ansa.it/sito/notizie/mondo/mondo_rss.xml",
  "ANSA Ultima ora": "https://www.ansa.it/sito/ansait_rss.xml",
