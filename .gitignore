@@ -1,0 +1,6 @@
+credenciais/
+saida/
+__pycache__/
+.wrangler/
+site/
+manchetes.json

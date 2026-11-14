@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="it"><head><meta charset="utf-8">
+<style>
+@font-face{font-family:Inter;src:url(Inter.ttf);font-weight:100 900}
+@font-face{font-family:Anton;src:url(Anton-Regular.ttf)}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{overflow:hidden;background:transparent;font-family:Inter,"Segoe UI Emoji","Noto Color Emoji",sans-serif}
+/* marca */
+.logo{font:400 46px/1 Anton,sans-serif;letter-spacing:2px;color:#fff;display:flex;align-items:center;gap:12px;text-transform:uppercase}
+.logo i{width:20px;height:20px;border-radius:50%;background:#ff2d2d;box-shadow:0 0 0 6px rgba(255,45,45,.25);display:inline-block}
+/* caixas estilo texto do Instagram: fundo branco por linha */
+.cx{display:inline;background:#fff;color:#000;font-weight:800;line-height:1.42;padding:6px 16px;border-radius:12px;
+    -webkit-box-decoration-break:clone;box-decoration-break:clone}
+.bloco{margin-bottom:34px;max-width:100%}
+/* STORY 1080x1920 */
+body.story{width:1080px;height:1920px;background:#000}
+.story .w{position:absolute;left:90px;right:120px;top:50%;transform:translateY(-50%)}
+.story .cx{font-size:52px}
+.story .rod{position:absolute;left:0;right:0;bottom:250px;text-align:center;color:#fff;font:800 40px Inter}
+.story .fonte{position:absolute;left:0;right:0;bottom:190px;text-align:center;color:#9a9a9a;font:600 30px Inter}
+/* POST 1080x1350 */
+body.post{width:1080px;height:1350px;background:#000;position:relative}
+.post .ft{position:absolute;left:0;top:0;width:1080px;height:860px;object-fit:cover}
+.post .gr{position:absolute;left:0;top:560px;width:1080px;height:320px;background:linear-gradient(to bottom,rgba(0,0,0,0),#000)}
+.post .logo{position:absolute;left:54px;top:48px;text-shadow:0 2px 14px rgba(0,0,0,.6)}
+.post .bx{position:absolute;left:54px;right:54px;bottom:96px}
+.chip{display:inline-block;background:#ff2d2d;color:#fff;font:800 26px Inter;letter-spacing:.08em;text-transform:uppercase;padding:8px 16px;border-radius:6px;margin-bottom:22px}
+.post h1{color:#fff;font:800 60px/1.12 Inter;letter-spacing:-.01em}
+.post .cred{position:absolute;right:54px;bottom:36px;color:#8a8a8a;font:500 22px Inter}
+.post .hd{position:absolute;left:54px;bottom:36px;color:#fff;font:700 24px Inter}
+/* REEL: faixa de cima 1080x620 e caixa de fatos 1080x1920 transparente */
+body.topo{width:1080px;height:620px;background:#000;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:30px;padding:0 70px;text-align:center}
+.topo h1{color:#fff;font:800 58px/1.15 Inter}
+body.fato{width:1080px;height:1920px;background:transparent}
+.fato .w{position:absolute;left:70px;right:70px;bottom:300px}
+.fato .cx{font-size:50px}
+body.cta{width:1080px;height:1350px;background:#000}
+.cta .logo{position:absolute;left:0;right:0;top:110px;justify-content:center;font-size:56px}
+.cta .w{position:absolute;left:90px;right:90px;top:50%;transform:translateY(-46%)}
+.cta .cx{font-size:56px}
+.cta .seg{position:absolute;left:0;right:0;bottom:110px;display:flex;justify-content:center}
+.cta .seg span{background:#ff2d2d;color:#fff;font:800 44px Inter;padding:20px 44px;border-radius:999px}
+body.cred2{width:1080px;height:1920px;background:transparent}
+.cred2 span{position:absolute;right:30px;bottom:40px;color:#fff;font:600 24px Inter;text-shadow:0 1px 6px #000;background:rgba(0,0,0,.45);padding:6px 12px;border-radius:6px}
+</style></head>
+<body><div id="r"></div>
+<script>
+const d = JSON.parse(decodeURIComponent(location.hash.slice(1) || '{}'));
+const esc = s => String(s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;');
+const logo = `<div class="logo"><i></i>${esc(d.marca)}</div>`;
+document.body.className = d.modo;
+const r = document.getElementById('r');
+if (d.modo === 'story') {
+  r.innerHTML = `<div class="w">${d.blocos.map(b => `<div class="bloco"><span class="cx">${esc(b)}</span></div>`).join('')}</div>
+  <div class="rod">${esc(d.handle)}</div>${d.fonte ? `<div class="fonte">Fonte: ${esc(d.fonte)}</div>` : ''}`;
+} else if (d.modo === 'post') {
+  r.innerHTML = `<img class="ft" src="${d.foto}" style="object-position:${d.pos || '50% 40%'}"><div class="gr"></div>${logo}
+  <div class="bx"><span class="chip">${esc(d.chip)}</span><h1>${esc(d.titulo)}</h1></div>
+  <div class="hd">${esc(d.handle)}</div><div class="cred">${esc(d.credito)}</div>`;
+} else if (d.modo === 'topo') {
+  r.innerHTML = `${logo}<h1>${esc(d.titulo)}</h1>`;
+} else if (d.modo === 'fato') {
+  r.innerHTML = `<div class="w">${d.blocos.map(b => `<div class="bloco"><span class="cx">${esc(b)}</span></div>`).join('')}</div>`;
+} else if (d.modo === 'cta') {
+  r.innerHTML = `${logo}<div class="w">${d.blocos.map(b => `<div class="bloco"><span class="cx">${esc(b)}</span></div>`).join('')}</div>
+  <div class="seg"><span>Segui ${esc(d.handle)}</span></div>`;
+} else if (d.modo === 'cred2') {
+  r.innerHTML = `<span>${esc(d.credito)}</span>`;
+}
+document.fonts.ready.then(() => { const im = document.querySelector('img'); if (im && !im.complete) im.onload = () => document.title = 'ok'; else document.title = 'ok'; });
+</script></body></html>

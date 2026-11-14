@@ -1,0 +1,135 @@
+"""Gera as artes de uma notícia do @radar_mondo a partir de itens/<id>.json.
+
+  python gerar.py <id>   -> saida/<id>/: story.jpg (sempre), post.jpg + cta.jpg (formato "post"), reel.mp4 + capa.jpg (formato "reel")
+Fotos: só livres (Wikimedia Commons / governo), baixadas da URL do item, com crédito na arte.
+"""
+import json
+import os
+import subprocess
+import sys
+import urllib.parse
+import urllib.request
+
+import navegador
+
+BASE = os.path.dirname(os.path.abspath(__file__))
+ARTE = os.path.join(BASE, "modelo", "arte.html")
+MUSICAS = sorted(os.path.join(BASE, "musica", f) for f in os.listdir(os.path.join(BASE, "musica")) if f.endswith(".mp3"))
+MARCA, HANDLE = "Radar Mondo", "@radar_mondo"
+UA = {"User-Agent": "RadarMondoBot/1.0 (free-image download)"}
+CTA = ["🌍 Hai appena trovato la pagina che ti aggiorna su quello che succede nel mondo, ora per ora.",
+       "Seguici e attiva le notifiche: l'algoritmo potrebbe non mostrarti più i nostri post."]
+if os.name == "nt":
+    try:
+        import truststore
+        truststore.inject_into_ssl()
+    except ImportError:
+        pass
+
+
+def tela(dados, destino_png, w, h):
+    url = navegador.url_arquivo(ARTE, urllib.parse.quote(json.dumps(dict(dados, marca=MARCA, handle=HANDLE), ensure_ascii=False)))
+    navegador.print_pagina(url, destino_png, w, h)
+
+
+def jpg(png, destino):
+    subprocess.run(["ffmpeg", "-nostdin", "-v", "error", "-y", "-i", png, "-q:v", "2", destino], check=True)
+
+
+def ff(*a):
+    subprocess.run(["ffmpeg", "-nostdin", "-v", "error", "-y", *a], check=True)
+
+
+def baixar_fotos(item, pasta):
+    locais = []
+    for i, f in enumerate(item.get("fotos", [])[:3]):
+        destino = os.path.join(pasta, f"foto{i}.jpg")
+        try:
+            dados = urllib.request.urlopen(urllib.request.Request(f["url"], headers=UA), timeout=60).read()
+            open(destino, "wb").write(dados)
+            locais.append(dict(f, arquivo=destino))
+        except Exception as e:
+            print("foto não baixou:", f.get("url"), str(e)[:80])
+    return locais
+
+
+def main():
+    iid = sys.argv[1]
+    item = json.load(open(os.path.join(BASE, "itens", f"{iid}.json"), encoding="utf-8"))
+    pasta = os.path.join(BASE, "saida", iid)
+    os.makedirs(pasta, exist_ok=True)
+    fonte = ", ".join(item.get("fontes", []))
+
+    # STORY (sempre)
+    tela({"modo": "story", "blocos": item["story"]["blocos"], "fonte": fonte}, os.path.join(pasta, "story.png"), 1080, 1920)
+    jpg(os.path.join(pasta, "story.png"), os.path.join(pasta, "story.jpg"))
+
+    formato = item.get("formato", "story")
+    fotos = baixar_fotos(item, pasta) if formato in ("post", "reel") else []
+    if formato in ("post", "reel") and not fotos:
+        print("sem foto livre: fica só o story")
+        formato = "story"
+    credito = " · ".join(dict.fromkeys(f.get("credito", "") for f in fotos if f.get("credito")))
+
+    if formato == "post":
+        f0 = fotos[0]
+        tela({"modo": "post", "foto": navegador.url_arquivo(f0["arquivo"]), "pos": f0.get("pos", "50% 40%"), "chip": item["chip"],
+              "titulo": item["titulo"], "credito": credito}, os.path.join(pasta, "post.png"), 1080, 1350)
+        jpg(os.path.join(pasta, "post.png"), os.path.join(pasta, "post.jpg"))
+        tela({"modo": "cta", "blocos": CTA}, os.path.join(pasta, "cta.png"), 1080, 1350)
+        jpg(os.path.join(pasta, "cta.png"), os.path.join(pasta, "cta.jpg"))
+
+    if formato == "reel":
+        tmp = os.path.join(pasta, "_reel")
+        os.makedirs(tmp, exist_ok=True)
+        fatos = item.get("fatos") or [[b] for b in item["story"]["blocos"][:3]]
+        dur_fato = 4.2
+        total = 0.6 + dur_fato * len(fatos) + 0.6
+        tela({"modo": "topo", "titulo": item["titulo"]}, os.path.join(tmp, "topo.png"), 1080, 620)
+        for i, f in enumerate(fatos):
+            tela({"modo": "fato", "blocos": f}, os.path.join(tmp, f"fato{i}.png"), 1080, 1920)
+        tela({"modo": "cred2", "credito": credito}, os.path.join(tmp, "cred.png"), 1080, 1920)
+        # fotos embaixo da faixa, andando devagar (sem zoom), divididas no tempo do vídeo
+        parte = total / len(fotos) + (0.8 if len(fotos) > 1 else 0)
+        segs = []
+        for i, f in enumerate(fotos):
+            cr = (f"crop=1080:1300:(iw-1080)*t/{parte:.2f}:(ih-1300)/2" if i % 2 == 0
+                  else f"crop=1080:1300:(iw-1080)/2:(ih-1300)*(1-t/{parte:.2f})")
+            s = os.path.join(tmp, f"f{i}.mp4")
+            ff("-loop", "1", "-t", f"{parte:.2f}", "-i", f["arquivo"], "-vf",
+               f"scale=1210:1456:force_original_aspect_ratio=increase,{cr},fps=30,format=yuv420p", "-c:v", "libx264", "-crf", "20", s)
+            segs.append(s)
+        base = os.path.join(tmp, "base.mp4")
+        if len(segs) == 1:
+            os.replace(segs[0], base)
+        else:
+            entradas, filtro, ult, off = [], "", "[0:v]", 0.0
+            for s in segs:
+                entradas += ["-i", s]
+            for i in range(1, len(segs)):
+                off += parte - 0.8
+                filtro += f"{ult}[{i}:v]xfade=transition=fade:duration=0.8:offset={off:.2f}[x{i}];"
+                ult = f"[x{i}]"
+            ff(*entradas, "-filter_complex", filtro.rstrip(";"), "-map", ult, "-c:v", "libx264", "-crf", "20", base)
+        ins = ["-i", base, "-loop", "1", "-t", f"{total:.2f}", "-i", os.path.join(tmp, "topo.png")]
+        for i in range(len(fatos)):
+            ins += ["-loop", "1", "-t", f"{total:.2f}", "-i", os.path.join(tmp, f"fato{i}.png")]
+        ins += ["-loop", "1", "-t", f"{total:.2f}", "-i", os.path.join(tmp, "cred.png")]
+        musica = MUSICAS[sum(map(ord, iid)) % len(MUSICAS)]
+        ins += ["-ss", "20", "-i", musica]
+        n = len(fatos)
+        filtro = "[0:v]pad=1080:1920:0:620:black[b0];[b0][1:v]overlay=0:0[t0];"
+        for i in range(n):
+            a, b = 0.6 + i * dur_fato, 0.6 + (i + 1) * dur_fato
+            filtro += f"[t{i}][{2 + i}:v]overlay=0:0:enable='between(t,{a:.2f},{b:.2f})'[t{i + 1}];"
+        filtro += f"[t{n}][{2 + n}:v]overlay=0:0,format=yuv420p[v];[{3 + n}:a]volume=0.35,afade=t=in:d=0.5,afade=t=out:st={total - 0.8:.2f}:d=0.8[a]"
+        ff(*ins, "-filter_complex", filtro, "-map", "[v]", "-map", "[a]", "-t", f"{total:.2f}", "-r", "30",
+           "-c:v", "libx264", "-crf", "20", "-c:a", "aac", "-b:a", "128k", "-movflags", "+faststart", os.path.join(pasta, "reel.mp4"))
+        ff("-ss", "1.2", "-i", os.path.join(pasta, "reel.mp4"), "-frames:v", "1", "-q:v", "2", os.path.join(pasta, "capa.jpg"))
+
+    json.dump({"formato": formato}, open(os.path.join(pasta, "gerado.json"), "w", encoding="utf-8"))
+    print(iid, "->", formato)
+
+
+if __name__ == "__main__":
+    main()

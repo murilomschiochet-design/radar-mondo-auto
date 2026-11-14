@@ -1,0 +1,69 @@
+# Quando a rotina do Claude manda uma notícia nova (itens/*.json), gera as artes e publica na hora no Instagram @radar_mondo.
+# Secrets: IG_TOKEN, IG_USER_ID, CLOUDFLARE_API_TOKEN (para as imagens terem um endereço público).
+name: Publicar noticia
+
+on:
+  push:
+    branches: [main]
+    paths: ["itens/*.json"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publicar
+  cancel-in-progress: false
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    env:
+      PYTHONIOENCODING: utf-8
+      USAR_PLAYWRIGHT: "1"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Instalar ffmpeg, fontes e navegador
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg fonts-noto-color-emoji >/dev/null
+          python -m pip install -q -r requirements.txt
+          python -m playwright install --with-deps chromium >/dev/null
+      - name: Quais noticias ainda nao foram publicadas
+        id: novos
+        run: |
+          python -c "import json,os,glob;r=json.load(open('publicados.json')) if os.path.exists('publicados.json') else {};n=[os.path.basename(f)[:-5] for f in sorted(glob.glob('itens/*.json')) if os.path.basename(f)[:-5] not in r and not f.endswith('teste.json')];print('ids='+' '.join(n[-3:]))" >> "$GITHUB_OUTPUT"
+      - name: Gerar artes
+        run: |
+          for id in ${{ steps.novos.outputs.ids }}; do python gerar.py $id; done
+      - name: Publicar imagens (endereco publico)
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: 52b6bb474d2f430ceddd01ef2a1ccf32
+        run: |
+          [ -z "${{ steps.novos.outputs.ids }}" ] && exit 0
+          mkdir -p site
+          printf '/*\n  X-Robots-Tag: noindex\n' > site/_headers
+          for id in ${{ steps.novos.outputs.ids }}; do mkdir -p site/$id; cp saida/$id/*.jpg site/$id/ 2>/dev/null || true; done
+          npx -y wrangler@4 pages deploy site --project-name radar-mondo-midia --branch main --commit-dirty=true
+      - name: Publicar no Instagram
+        env:
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+        run: |
+          for id in ${{ steps.novos.outputs.ids }}; do python publicar.py $id || echo "falhou: $id"; done
+      - name: Salvar registro
+        if: always()
+        run: |
+          git config user.name "radar-bot"
+          git config user.email "radar-bot@users.noreply.github.com"
+          git add publicados.json 2>/dev/null || true
+          git diff --cached --quiet && exit 0
+          git commit -q -m "publicados"
+          git pull --rebase -q
+          git push
