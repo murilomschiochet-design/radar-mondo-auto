@@ -1,5 +1,5 @@
 # Quando a rotina do Claude manda uma notícia nova (itens/*.json), gera as artes e publica na hora no Instagram @radar_mondo.
-# Secrets: IG_TOKEN, IG_USER_ID, CLOUDFLARE_API_TOKEN (para as imagens terem um endereço público).
+# Secrets: IG_TOKEN, IG_USER_ID, CLOUDFLARE_API_TOKEN (modelo "Edit Cloudflare Workers": publica as imagens em radar-mondo-midia.murilomschiochet.workers.dev).
 name: Publicar noticia
 
 on:
@@ -50,7 +50,7 @@ jobs:
           mkdir -p site
           printf '/*\n  X-Robots-Tag: noindex\n' > site/_headers
           for id in ${{ steps.novos.outputs.ids }}; do mkdir -p site/$id; cp saida/$id/*.jpg site/$id/ 2>/dev/null || true; done
-          npx -y wrangler@4 pages deploy site --project-name radar-mondo-midia --branch main --commit-dirty=true
+          npx -y wrangler@4 deploy
       - name: Publicar no Instagram
         env:
           IG_TOKEN: ${{ secrets.IG_TOKEN }}
