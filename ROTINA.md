@@ -26,7 +26,7 @@ Você roda de hora em hora, das 06:00 às 23:00 (Roma). A cada rodada: escolhe *
   - até `fim_semana1` do `config.json` (22/11): pelo menos `intervalo_feed_min` (150 min) desde o último post/reel em `publicados.json` (campo `quando` dos itens com `formato` post/reel);
   - depois: pelo menos 60 min.
 - **Reel** quando a notícia tem movimento (aviões, foguetes, multidões, tempestades); **post** quando uma boa foto conta a história.
-- **Foto livre obrigatória** para post/reel: `python foto_livre.py "busca em inglês" 8` (Wikimedia Commons: domínio público, CC0, CC BY, CC BY-SA). Escolha só foto que realmente tenha a ver (o lugar, o objeto, a instituição). Nunca foto de agência (Reuters, AP, Getty, ANSA) nem print de TV/rede social. Sem foto boa → fica só o story.
+- **Foto livre obrigatória** para post/reel: `python foto_livre.py "busca em inglês" 8` (Wikimedia Commons: domínio público, CC0, CC BY, CC BY-SA). Escolha só foto que realmente tenha a ver (o lugar, o objeto, a instituição). Nunca foto de agência (Reuters, AP, Getty, ANSA) nem print de TV/rede social. Se o `foto_livre.py` falhar (ex.: erro 429 do Wikimedia), ele mostra o endereço da busca: abra com WebFetch e escolha pela mesma regra de licença. Sem foto boa → fica só o story.
 
 ## Passo 4 — escrever `itens/<id>.json`
 ```json
