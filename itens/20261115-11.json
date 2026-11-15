@@ -1,0 +1,12 @@
+{
+ "id": "20261115-11",
+ "formato": "story",
+ "chip": "Mondo",
+ "titulo": "",
+ "fontes": ["France24", "Al Jazeera"],
+ "links": ["https://www.france24.com/en/middle-east/20261115-iran-claims-attack-on-us-military-airbase-in-bahrain", "https://www.aljazeera.com/news/2026/11/15/iran-says-it-targets-us-radar-in-bahrain-what-do-we-know"],
+ "story": {"blocos": ["🔴 Bahrein: i Pasdaran iraniani dicono di aver attaccato con sei droni un radar Usa nella base di Al-Riffa.", "L'esercito del Bahrein parla di diversi attacchi intercettati. Il Centcom dice di aver abbattuto due droni: nessuna vittima né danni.", "È il secondo attacco rivendicato dall'Iran sul Bahrein in tre giorni. Sirene in tutta l'isola, le prime da settembre."]},
+ "fatos": [],
+ "fotos": [],
+ "legenda": "I Pasdaran iraniani rivendicano un attacco con sei droni contro un radar Usa in Bahrein. Il Centcom ne ha abbattuti due, senza vittime.\n\nFonte: France24, Al Jazeera\n\n#notizie #mondo #ultimora #iran #bahrein"
+}
