@@ -1,0 +1,12 @@
+{
+ "id": "20261115-10",
+ "formato": "story",
+ "chip": "Mondo",
+ "titulo": "",
+ "fontes": ["BBC", "Al Jazeera"],
+ "links": ["https://www.bbc.co.uk/news/articles/cqrkg4r6mg7xo", "https://www.aljazeera.com/news/2026/11/15/israeli-air-strike-kills-senior-hamas-commander-in-gaza"],
+ "story": {"blocos": ["🔴 Gaza: ucciso Samir Abu Younis, comandante della Brigata di Rafah di Hamas. Lo confermano sia Hamas sia l'esercito israeliano.", "Secondo Israele e lo Shin Bet, un attacco con drone a Khan Younis, nel sud di Gaza. Al Jazeera: colpita una tenda nell'area di al-Mawasi.", "Due altre persone ferite, portate al Nasser Medical Complex. Gli attacchi continuano nonostante il cessate il fuoco."]},
+ "fatos": [],
+ "fotos": [],
+ "legenda": "Samir Abu Younis, comandante della Brigata di Rafah di Hamas, è stato ucciso in un attacco israeliano a Khan Younis. La morte è confermata da Hamas e dall'esercito israeliano.\n\nFonte: BBC, Al Jazeera\n\n#notizie #mondo #ultimora #gaza"
+}
