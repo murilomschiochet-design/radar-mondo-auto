@@ -1,0 +1,12 @@
+{
+ "id": "20261115-20",
+ "formato": "story",
+ "chip": "Hacker",
+ "titulo": "",
+ "fontes": ["BleepingComputer"],
+ "links": ["https://www.bleepingcomputer.com/news/security/fbi-warns-artex-ai-hacking-tool-is-powering-global-cyberattacks/"],
+ "story": {"blocos": ["💻 L'FBI avverte: ARTEX, uno strumento di hacking basato sull'IA, è usato da diversi gruppi in attacchi informatici in tutto il mondo.", "Secondo l'avviso, in alcune intrusioni sono bastate meno di tre ore per ottenere accessi privilegiati. Gli attacchi risalgono ad agosto 2026.", "Tra i settori colpiti: finanza, governo, tecnologia, difesa e sanità. Fonte: BleepingComputer."]},
+ "fatos": [],
+ "fotos": [],
+ "legenda": "L'FBI avverte che ARTEX, un framework open source di penetration testing basato sull'IA, è usato da più gruppi di hacker dal agosto 2026.\n\nFonte: BleepingComputer\n\n#notizie #mondo #hacker #cybersecurity #ultimora"
+}
