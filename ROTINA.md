@@ -28,7 +28,7 @@ Você roda de hora em hora, das 06:00 às 23:00 (Roma). A cada rodada: escolhe *
   - depois: pelo menos 60 min.
 - **Prefira REEL** a post: reel é o que traz seguidor novo. Dois tipos:
   - `"reel"`: com foto livre (quando a notícia tem imagem forte: aviões, foguetes, lugares, tempestades);
-  - `"reel_texto"`: **sem foto**, no estilo do story (fundo preto, caixas brancas que aparecem uma por uma). Use para notícia **muito forte** sem foto livre boa, ou quando a força está no texto (número chocante, declaração, alerta). Escreva `reel_blocos`: 3 a 5 blocos curtos, o primeiro é o gancho ("🔴 ULTIM'ORA: …", "⚠️ …"), o último fecha com o que acontece agora.
+  - `"reel_texto"`: **sem foto**, no estilo do story (fundo preto, caixas brancas, imagem parada de 10 s com o texto inteiro). Use para notícia **muito forte** sem foto livre boa, ou quando a força está no texto (número chocante, declaração, alerta). Escreva `reel_blocos`: 3 a 5 blocos curtos, o primeiro é o gancho ("🔴 ULTIM'ORA: …", "⚠️ …"), o último fecha com o que acontece agora.
 - **Post** (carrossel) só quando uma boa foto conta a história e não pede vídeo.
 - **Foto livre obrigatória** para post/reel: `python foto_livre.py "busca em inglês" 8` (Wikimedia Commons: domínio público, CC0, CC BY, CC BY-SA). Escolha só foto que realmente tenha a ver (o lugar, o objeto, a instituição). Nunca foto de agência (Reuters, AP, Getty, ANSA) nem print de TV/rede social. Se o `foto_livre.py` falhar (ex.: erro 429 do Wikimedia), ele mostra o endereço da busca: abra com WebFetch e escolha pela mesma regra de licença. Sem foto boa → fica só o story.
 
