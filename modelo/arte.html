@@ -16,6 +16,7 @@ html,body{overflow:hidden;background:transparent;font-family:Inter,"Segoe UI Emo
 body.story{width:1080px;height:1920px;background:#000}
 .story .w{position:absolute;left:90px;right:120px;top:50%;transform:translateY(-50%)}
 .story .cx{font-size:52px}
+.story .w.fixo{top:300px;transform:none}
 .story .rod{position:absolute;left:0;right:0;bottom:250px;text-align:center;color:#fff;font:800 40px Inter}
 .story .fonte{position:absolute;left:0;right:0;bottom:190px;text-align:center;color:#9a9a9a;font:600 30px Inter}
 /* POST 1080x1350 */
@@ -51,7 +52,7 @@ const logo = `<div class="logo"><i></i>${esc(d.marca)}</div>`;
 document.body.className = d.modo;
 const r = document.getElementById('r');
 if (d.modo === 'story') {
-  r.innerHTML = `<div class="w">${d.blocos.map(b => `<div class="bloco"><span class="cx">${esc(b)}</span></div>`).join('')}</div>
+  r.innerHTML = `<div class="w${d.fixo ? ' fixo' : ''}">${d.blocos.map(b => `<div class="bloco"><span class="cx">${esc(b)}</span></div>`).join('')}</div>
   <div class="rod">${esc(d.handle)}</div>${d.fonte ? `<div class="fonte">Fonte: ${esc(d.fonte)}</div>` : ''}`;
 } else if (d.modo === 'post') {
   r.innerHTML = `<img class="ft" src="${d.foto}" style="object-position:${d.pos || '50% 40%'}"><div class="gr"></div>${logo}

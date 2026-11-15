@@ -1,7 +1,7 @@
 {
-  "_explicacao": "@radar_mondo: a rotina roda de hora em hora das 06:00 às 23:00 (Roma). Story sempre que houver notícia boa; post/reel só notícia forte. Semana 1 (até 22/11): no máximo 1 post/reel a cada 2h30.",
+  "_explicacao": "@radar_mondo: a rotina roda de hora em hora das 06:00 às 23:00 (Roma). Story sempre que houver notícia boa; reel (com foto ou reel_texto) ou post só notícia forte. Semana 1 (até 22/11): no máximo 1 post/reel a cada 1h30.",
   "user_id": "17841479576374141",
   "midia": "https://radar-mondo-midia.murilomschiochet.workers.dev",
-  "intervalo_feed_min": 150,
+  "intervalo_feed_min": 90,
   "fim_semana1": "2026-11-22"
 }

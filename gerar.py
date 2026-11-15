@@ -1,6 +1,6 @@
 """Gera as artes de uma notícia do @radar_mondo a partir de itens/<id>.json.
 
-  python gerar.py <id>   -> saida/<id>/: story.jpg (sempre), post.jpg + cta.jpg (formato "post"), reel.mp4 + capa.jpg (formato "reel")
+  python gerar.py <id>   -> saida/<id>/: story.jpg (sempre), post.jpg + cta.jpg ("post"), reel.mp4 + capa.jpg ("reel" com foto, ou "reel_texto": estilo story, sem foto)
 Fotos: só livres (Wikimedia Commons / governo), baixadas da URL do item, com crédito na arte.
 """
 import json
@@ -126,6 +126,32 @@ def main():
         ff(*ins, "-filter_complex", filtro, "-map", "[v]", "-map", "[a]", "-t", f"{total:.2f}", "-r", "30",
            "-c:v", "libx264", "-crf", "20", "-c:a", "aac", "-b:a", "128k", "-movflags", "+faststart", os.path.join(pasta, "reel.mp4"))
         ff("-ss", "1.2", "-i", os.path.join(pasta, "reel.mp4"), "-frames:v", "1", "-q:v", "2", os.path.join(pasta, "capa.jpg"))
+
+    if formato == "reel_texto":
+        # reel no estilo do story: fundo preto, as caixas brancas aparecem uma por uma, música baixa
+        tmp = os.path.join(pasta, "_rt")
+        os.makedirs(tmp, exist_ok=True)
+        blocos = item.get("reel_blocos") or item["story"]["blocos"]
+        passos, ins = [], []
+        for i in range(1, len(blocos) + 1):
+            png = os.path.join(tmp, f"p{i}.png")
+            tela({"modo": "story", "blocos": blocos[:i], "fonte": fonte, "fixo": True}, png, 1080, 1920)
+            passos.append(png)
+        durs = [max(2.6, min(5.5, len(b) / 22)) for b in blocos]
+        durs[-1] += 2.0                                   # o último fica mais tempo na tela
+        total = sum(durs)
+        filtro, ult = "", None
+        for i, (png, d) in enumerate(zip(passos, durs)):
+            ins += ["-loop", "1", "-t", f"{d:.2f}", "-i", png]
+            filtro += f"[{i}:v]fps=30,format=yuv420p,setsar=1[s{i}];"
+        filtro += "".join(f"[s{i}]" for i in range(len(passos))) + f"concat=n={len(passos)}:v=1:a=0[v];"
+        musica = MUSICAS[sum(map(ord, iid)) % len(MUSICAS)]
+        ins += ["-ss", "20", "-i", musica]
+        filtro += f"[{len(passos)}:a]volume=0.35,afade=t=in:d=0.5,afade=t=out:st={total - 0.8:.2f}:d=0.8[a]"
+        ff(*ins, "-filter_complex", filtro, "-map", "[v]", "-map", "[a]", "-t", f"{total:.2f}", "-r", "30",
+           "-c:v", "libx264", "-crf", "20", "-c:a", "aac", "-b:a", "128k", "-movflags", "+faststart", os.path.join(pasta, "reel.mp4"))
+        jpg(passos[-1], os.path.join(pasta, "capa.jpg"))
+        formato = "reel"
 
     json.dump({"formato": formato}, open(os.path.join(pasta, "gerado.json"), "w", encoding="utf-8"))
     print(iid, "->", formato)
