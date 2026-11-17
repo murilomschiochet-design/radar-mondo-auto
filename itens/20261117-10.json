@@ -1,0 +1,12 @@
+{
+ "id": "20261117-10",
+ "formato": "reel",
+ "chip": "Mondo",
+ "titulo": "Ponte di Crimea colpito per il secondo giorno: parte della carreggiata crollata in mare",
+ "fontes": ["ANSA", "Al Jazeera", "Guardian"],
+ "links": ["https://www.ansa.it/sito/notizie/mondo/europa/2026/11/17/riunione-a-mosca-per-ripristinare-il-ponte-di-crimea-immagini-di-crollo-parziale_58bbedc2-1644-4047-9dbc-4316978c4132.html", "https://www.aljazeera.com/news/2026/11/17/ukrainian-drone-attack-kills-two-in-crimea-as-kyiv-targets-kerch-bridge"],
+ "story": {"blocos": ["🔴 Il Ponte di Crimea è stato colpito per il secondo giorno consecutivo dalle forze ucraine.", "Secondo Al Jazeera, la parte stradale sarebbe crollata in mare. Il governatore Aksyonov: traffico sospeso.", "Il governo russo ha convocato una riunione sul ripristino del ponte."]},
+ "fatos": [["🌉 Secondo attacco in 24 ore al Ponte di Crimea."], ["Immagini di media indipendenti mostrano arcate crollate in parte.", "Il governatore Aksyonov: traffico sospeso."], ["Mosca: riunione sul ripristino.", "Kiev: colpiti anche due ponti, secondo Klitschko."]],
+ "fotos": [{"url": "https://upload.wikimedia.org/wikipedia/commons/8/88/Kerch_Strait_Bridge.jpg", "credito": "Foto: Paraserg (CC BY-SA 4.0)", "pos": "50% 50%"}],
+ "legenda": "Il Ponte di Crimea, che collega la penisola annessa dalla Russia nel 2014 alla costa russa, è stato colpito per il secondo giorno consecutivo dalle forze ucraine. Immagini di media indipendenti mostrano il crollo parziale delle arcate; il governatore Aksyonov ha annunciato la sospensione del traffico. Il governo russo ha convocato una riunione sul ripristino del ponte.\n\nFonte: ANSA, Al Jazeera, Guardian\n\n#notizie #mondo #ultimora #ucraina #crimea #russia\n\nSeguici @radar_mondo per non perdere le notizie del mondo, ora per ora."
+}
