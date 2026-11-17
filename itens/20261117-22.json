@@ -1,0 +1,27 @@
+{
+ "id": "20261117-22",
+ "formato": "reel_texto",
+ "chip": "Hacker",
+ "titulo": "Rete interna della Nsa in tilt, Apple e Gmail down: \"manutenzione\", escluso un cyberattacco",
+ "fontes": ["ANSA", "Al Jazeera"],
+ "links": [
+  "https://www.ansa.it/sito/notizie/mondo/nordamerica/2026/11/17/apple-segnala-problemi-per-alcuni-dei-suoi-servizi_1d347fc9-8a19-4347-9982-47d8e3c7c4fa.html",
+  "https://www.aljazeera.com/news/2026/11/17/nsas-classified-internal-communications-network-reportedly-faces-outage"
+ ],
+ "story": {
+  "blocos": [
+   "⚠️ Interruzione alla rete interna riservata della Nsa (NSANet). L'agenzia parla di \"degrado temporaneo durante la manutenzione programmata\".",
+   "Secondo la Cnn, che cita sei fonti, nessuna prova di un cyberattacco. Le funzioni critiche restano operative, dice la Nsa.",
+   "Intanto problemi anche per i servizi Apple. L'Fbi aveva avvisato il 13/11 sull'uso di Artex, uno strumento IA, per attacchi informatici."
+  ]
+ },
+ "fatos": [],
+ "reel_blocos": [
+  "⚠️ NSA: in tilt la rete interna riservata NSANet. L'agenzia parla di \"manutenzione programmata\".",
+  "Secondo la Cnn (sei fonti) nessuna prova di un cyberattacco. Le funzioni critiche restano operative, dice la Nsa.",
+  "Nelle stesse ore problemi per i servizi Apple, tra cui iCloud. Apple li attribuisce a un aggiornamento software interno.",
+  "L'Fbi aveva avvisato il 13 novembre: hacker legati a Stati usano Artex, un framework IA, per automatizzare attacchi."
+ ],
+ "fotos": [],
+ "legenda": "La Nsa ha detto che la sua rete interna riservata, NSANet, ha subito un \"degrado temporaneo durante la manutenzione programmata\". Secondo la Cnn, che cita sei fonti, non ci sono prove di un cyberattacco. Problemi anche per vari servizi Apple, attribuiti dall'azienda a un aggiornamento software interno. Il 13 novembre l'Fbi aveva diffuso un'allerta sull'uso di Artex, framework IA, per attacchi informatici.\n\nFonte: ANSA, Al Jazeera\n\n#notizie #mondo #ultimora #hacker #cybersecurity #nsa\n\nSeguici @radar_mondo per non perdere le notizie del mondo, ora per ora."
+}
