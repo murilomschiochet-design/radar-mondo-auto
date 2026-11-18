@@ -1,0 +1,13 @@
+{
+ "id": "20261118-14",
+ "formato": "reel_texto",
+ "chip": "Hacker",
+ "titulo": "Java4Shell: falla in Java espone Jira, Jenkins e Keycloak ad attacchi senza password",
+ "fontes": ["The Hacker News", "Guardian"],
+ "links": ["https://thehackernews.com/2026/11/java4shell-cve-2026-114938-enables-pre.html", "https://www.theguardian.com/us-news/2026/nov/18/zero-evidence-recent-tech-outages-linked-marco-rubio"],
+ "story": {"blocos": ["💻 Scoperta una falla in Java, soprannominata Java4Shell (CVE-2026-114938).", "Secondo i ricercatori di Calif può colpire senza autenticazione Jira, Confluence, Jenkins, Keycloak, Artifactory e PingFederate.", "Esistono già aggiornamenti Oracle, Amazon Corretto e Azul. Al momento non risultano attacchi noti."]},
+ "fatos": [],
+ "reel_blocos": ["💻 NUOVA FALLA IN JAVA: si chiama Java4Shell.", "Il bug è nel decodificatore Base64 di Java 17.0.6 e successivi, su processori x86-64 con AVX-512.", "Secondo Calif, Jira, Jenkins, Keycloak e altri software possono essere attaccati senza password.", "Gli aggiornamenti ci sono. Per ora nessun attacco noto: Calif non ha diffuso il codice."],
+ "fotos": [],
+ "legenda": "Ricercatori di Calif hanno scoperto Java4Shell (CVE-2026-114938), una falla nel decodificatore Base64 di Java. Può essere sfruttata senza autenticazione su applicazioni come Jira, Confluence, Jenkins, Keycloak, Artifactory e PingFederate. Oracle, Amazon e Azul hanno già rilasciato correzioni; la Cyber Centre canadese non è a conoscenza di attacchi.\n\nFonte: The Hacker News, Guardian\n\n#notizie #hacker #cybersecurity #java #ultimora #tecnologia\n\nSeguici @radar_mondo per non perdere le notizie del mondo, ora per ora."
+}
