@@ -26,10 +26,11 @@ Você roda de hora em hora, das 06:00 às 23:00 (Roma). A cada rodada: escolhe *
 - **Post ou Reel: só notícia forte** (fato grande no mundo, ataque hacker relevante, pane ou recorde na aviação/espaço, curiosidade que viraliza) **e** só se respeitar o intervalo:
   - até `fim_semana1` do `config.json` (22/11): pelo menos `intervalo_feed_min` (90 min) desde o último post/reel em `publicados.json` (campo `quando` dos itens com `formato` post/reel);
   - depois: pelo menos 60 min.
-- **REEL é o formato principal do feed** (em conta pequena o reel entrega 10x mais que o carrossel: 155 views contra menos de 10). Em toda rodada com notícia boa e com o intervalo cumprido, faça **reel** além do story:
-  - `"reel_texto"` (padrão): imagem parada de 10 s no estilo do story, fundo preto e caixas brancas. Escreva `reel_blocos`: 3 a 5 blocos curtos, o primeiro é o gancho ("🔴 ULTIM'ORA: …", "⚠️ …"), o último diz o que acontece agora.
-  - `"reel"` com foto livre: só quando a notícia tem uma imagem livre muito forte (avião, foguete, lugar).
-- **Carrossel (post): quase nunca.** Só se a notícia precisar de uma foto para ser entendida e não couber em reel.
+- **REEL é o formato principal do feed** (em conta pequena o reel entrega 10x mais que o carrossel: 155 views contra menos de 10). Mas **o feed não pode virar só reel de fundo preto** (fica feio e repetitivo). Regras de variedade (desde 18/11):
+  - `"reel_texto"` **com foto do assunto atrás do texto** é o padrão: escreva `reel_blocos` (3 a 5 blocos curtos, o primeiro é o gancho "🔴 ULTIM'ORA: …", "⚠️ …", o último diz o que acontece agora) **e** `fotos` com 1 foto livre do assunto (lugar, objeto, instituição, avião, foguete…). O robô escurece a foto e põe o texto e o chip por cima, com o crédito.
+  - `"reel_texto"` **sem foto** (fundo preto) só quando não houver foto livre boa, e **nunca dois seguidos** (veja o `formato` dos últimos itens em `itens/` e `publicados.json`).
+  - **Carrossel (`"post"`) 2 a 3 por dia**, espalhados (um de manhã, um à tarde, um à noite): quando a notícia tiver uma foto livre forte. Se o último carrossel foi há mais de ~5 h e a notícia tem foto boa, faça carrossel nesta rodada em vez de reel.
+  - `"reel"` com fotos em movimento: quando houver 2–3 fotos livres muito fortes do mesmo assunto.
 - **Foto livre obrigatória** para post/reel: `python foto_livre.py "busca em inglês" 8` (Wikimedia Commons: domínio público, CC0, CC BY, CC BY-SA). Escolha só foto que realmente tenha a ver (o lugar, o objeto, a instituição). Nunca foto de agência (Reuters, AP, Getty, ANSA) nem print de TV/rede social. Se o `foto_livre.py` falhar (ex.: erro 429 do Wikimedia), ele mostra o endereço da busca: abra com WebFetch e escolha pela mesma regra de licença. Sem foto boa → fica só o story.
 
 ## Passo 4 — escrever `itens/<id>.json`
@@ -50,7 +51,7 @@ Você roda de hora em hora, das 06:00 às 23:00 (Roma). A cada rodada: escolhe *
 ```
 - Tudo em **italiano**, frases curtas, tom de agência (neutro). `story.blocos`: 2 a 4 blocos de até ~150 caracteres; o primeiro começa com um emoji que combine (⚠️ 🔴 ✈️ 🚀 💻 🌍 🔬 🌪️).
 - `chip`: uma palavra: `Mondo`, `Aviazione`, `Hacker`, `Spazio`, `Tecnologia`, `Scienza`, `Economia`, `Clima`, `Curiosità`.
-- `formato: "story"` → `titulo`, `fatos` e `fotos` podem ficar vazios. `post` → precisa de `titulo` e 1 foto. `reel` → `titulo`, 2 ou 3 grupos em `fatos` e 1 a 3 fotos. `reel_texto` → `reel_blocos` (3 a 5) e `legenda`; sem foto.
+- `formato: "story"` → `titulo`, `fatos` e `fotos` podem ficar vazios. `post` → precisa de `titulo` e 1 foto. `reel` → `titulo`, 2 ou 3 grupos em `fatos` e 1 a 3 fotos. `reel_texto` → `reel_blocos` (3 a 5), `legenda` e, de preferência, 1 foto em `fotos` (sem foto = fundo preto).
 - Na `legenda` de post/reel, termine com "Seguici @radar_mondo per non perdere le notizie del mondo, ora per ora."
 
 ## Passo 5 — validar e publicar

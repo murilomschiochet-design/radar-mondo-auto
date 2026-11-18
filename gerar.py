@@ -65,7 +65,7 @@ def main():
     jpg(os.path.join(pasta, "story.png"), os.path.join(pasta, "story.jpg"))
 
     formato = item.get("formato", "story")
-    fotos = baixar_fotos(item, pasta) if formato in ("post", "reel") else []
+    fotos = baixar_fotos(item, pasta) if formato in ("post", "reel", "reel_texto") else []
     if formato in ("post", "reel") and not fotos:
         print("sem foto livre: fica só o story")
         formato = "story"
@@ -131,7 +131,11 @@ def main():
         # reel no estilo do story: imagem parada com o texto inteiro, 10 s, música baixa
         blocos = item.get("reel_blocos") or item["story"]["blocos"]
         png = os.path.join(pasta, "reel_texto.png")
-        tela({"modo": "story", "blocos": blocos, "fonte": fonte}, png, 1080, 1920)
+        extra = {}
+        if fotos:   # foto livre do assunto atrás do texto (deixa o feed variado, não só fundo preto)
+            extra = {"foto": navegador.url_arquivo(fotos[0]["arquivo"]), "pos": fotos[0].get("pos", "50% 40%"),
+                     "credito": credito, "chip": item.get("chip", "")}
+        tela(dict({"modo": "story", "blocos": blocos, "fonte": fonte}, **extra), png, 1080, 1920)
         musica = MUSICAS[sum(map(ord, iid)) % len(MUSICAS)]
         ff("-loop", "1", "-t", "10", "-i", png, "-ss", "20", "-i", musica,
            "-filter_complex", "[0:v]fps=30,format=yuv420p,setsar=1[v];[1:a]volume=0.35,afade=t=in:d=0.5,afade=t=out:st=9.2:d=0.8[a]",

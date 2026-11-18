@@ -19,6 +19,13 @@ body.story{width:1080px;height:1920px;background:#000}
 .story .w.fixo{top:300px;transform:none}
 .story .rod{position:absolute;left:0;right:0;bottom:250px;text-align:center;color:#fff;font:800 40px Inter}
 .story .fonte{position:absolute;left:0;right:0;bottom:190px;text-align:center;color:#9a9a9a;font:600 30px Inter}
+/* reel/story com FOTO do assunto atrás do texto */
+.story .sbg{position:absolute;left:0;top:0;width:1080px;height:1920px;object-fit:cover;filter:saturate(1.1)}
+.story .sov{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(0,0,0,.55) 0%,rgba(0,0,0,.30) 30%,rgba(0,0,0,.45) 65%,rgba(0,0,0,.85) 100%)}
+.story .slogo{position:absolute;left:0;right:0;top:150px;display:flex;justify-content:center}
+.story .slogo .chip{margin:0}
+.story.comfoto .fonte{color:#d0d0d0;text-shadow:0 1px 8px #000}
+.story .scred{position:absolute;right:30px;bottom:40px;color:#fff;font:600 24px Inter;text-shadow:0 1px 6px #000;background:rgba(0,0,0,.45);padding:6px 12px;border-radius:6px}
 /* POST 1080x1350 */
 body.post{width:1080px;height:1350px;background:#000;position:relative}
 .post .ft{position:absolute;left:0;top:0;width:1080px;height:860px;object-fit:cover}
@@ -52,7 +59,10 @@ const logo = `<div class="logo"><i></i>${esc(d.marca)}</div>`;
 document.body.className = d.modo;
 const r = document.getElementById('r');
 if (d.modo === 'story') {
-  r.innerHTML = `<div class="w${d.fixo ? ' fixo' : ''}">${d.blocos.map(b => `<div class="bloco"><span class="cx">${esc(b)}</span></div>`).join('')}</div>
+  if (d.foto) document.body.classList.add('comfoto');
+  r.innerHTML = (d.foto ? `<img class="sbg" src="${d.foto}" style="object-position:${d.pos || '50% 40%'}"><div class="sov"></div>` +
+    (d.chip ? `<div class="slogo"><span class="chip">${esc(d.chip)}</span></div>` : '') +
+    (d.credito ? `<div class="scred">${esc(d.credito)}</div>` : '') : '') + `<div class="w${d.fixo ? ' fixo' : ''}">${d.blocos.map(b => `<div class="bloco"><span class="cx">${esc(b)}</span></div>`).join('')}</div>
   <div class="rod">${esc(d.handle)}</div>${d.fonte ? `<div class="fonte">Fonte: ${esc(d.fonte)}</div>` : ''}`;
 } else if (d.modo === 'post') {
   r.innerHTML = `<img class="ft" src="${d.foto}" style="object-position:${d.pos || '50% 40%'}"><div class="gr"></div>${logo}
