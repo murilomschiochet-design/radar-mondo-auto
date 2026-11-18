@@ -1,0 +1,12 @@
+{
+ "id": "20261118-18",
+ "formato": "reel_texto",
+ "chip": "Mondo",
+ "titulo": "Golfo: gli Usa colpiscono basi missilistiche sull'isola di Qeshm, l'Iran attacca Kuwait e Bahrein",
+ "fontes": ["Al Jazeera", "Euronews", "BBC"],
+ "links": ["https://www.aljazeera.com/news/2026/11/18/kuwait-bahrain-face-new-iran-attacks-after-us-strike-on-qeshm-island", "https://www.euronews.com/2026/11/18/us-strikes-targets-in-qeshm-island-after-iranian-mines-hit-five-ships-in-hormuz"],
+ "story": {"blocos": ["🔴 Gli Usa hanno colpito martedì sera basi di lancio missilistiche sull'isola iraniana di Qeshm, nello Stretto di Hormuz.", "Washington parla di risposta agli attacchi iraniani contro il personale Usa. Teheran ha rivendicato un attacco con droni a un radar americano in Bahrein.", "Il Kuwait ha attivato la difesa aerea: è la prima volta da inizio settembre. Il Bahrein è al quarto attacco in sei giorni."]},
+ "reel_blocos": ["🔴 ULTIM'ORA: gli Usa colpiscono basi missilistiche sull'isola iraniana di Qeshm.", "Washington parla di risposta agli attacchi iraniani contro personale e basi americane.", "L'Iran rivendica un attacco con droni al radar Usa in Bahrein e prende di mira una base in Kuwait.", "Il Bahrein è al quarto attacco in sei giorni. Arabia Saudita, Qatar e Lega Araba condannano l'escalation."],
+ "fotos": [{"url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/QeshmIsland_NASA.jpg/1920px-QeshmIsland_NASA.jpg", "credito": "Foto: NASA (pubblico dominio)", "pos": "50% 50%"}],
+ "legenda": "Gli Stati Uniti hanno colpito martedì sera basi di lancio missilistiche sull'isola di Qeshm, in Iran, dopo gli attacchi iraniani contro personale e installazioni Usa. L'Iran ha risposto con droni contro un radar in Bahrein e una base in Kuwait; Arabia Saudita, Qatar e Lega Araba condannano l'escalation.\n\nFonte: Al Jazeera, Euronews, BBC\n\nSeguici @radar_mondo per non perdere le notizie del mondo, ora per ora.\n\n#notizie #mondo #ultimora #iran #golfo"
+}
