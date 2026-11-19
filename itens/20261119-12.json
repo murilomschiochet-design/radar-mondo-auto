@@ -1,0 +1,13 @@
+{
+ "id": "20261119-12",
+ "formato": "reel_texto",
+ "chip": "Mondo",
+ "titulo": "Ponte di Crimea attaccato di nuovo nella notte: treni sospesi",
+ "fontes": ["Guardian", "Ukrinform"],
+ "links": ["https://www.theguardian.com/world/2026/nov/19/kerch-bridge-crimea-russia-attacked-again-ukraine", "https://www.ukrinform.net/rubric-ato/3736626-train-services-stopped-on-kerch-bridge.html"],
+ "story": {"blocos": ["🔴 Il ponte ferroviario di Kerch, che collega la Crimea alla Russia, è stato attaccato di nuovo nella notte.", "Lo dice il governatore insediato dalla Russia: i treni sono stati sospesi e si valutano i danni.", "Due giorni fa due attacchi avevano distrutto il tratto stradale del ponte."]},
+ "fatos": [],
+ "reel_blocos": ["🔴 ULTIM'ORA: il Ponte di Crimea è stato attaccato di nuovo.", "È il ponte ferroviario rimasto in piedi: treni sospesi dopo l'attacco notturno.", "Due giorni fa due attacchi avevano distrutto il tratto stradale.", "Si valutano i danni: attesi aggiornamenti."],
+ "fotos": [{"url": "https://upload.wikimedia.org/wikipedia/commons/8/88/Kerch_Strait_Bridge.jpg", "credito": "Foto: Paraserg (CC BY-SA 4.0)", "pos": "50% 50%"}],
+ "legenda": "Il ponte ferroviario di Kerch, che collega la Crimea annessa alla Russia, è stato attaccato di nuovo nella notte, secondo il governatore insediato dalla Russia. I treni sono stati sospesi e sono in corso le verifiche sui danni. L'attacco arriva due giorni dopo i due colpi che avevano distrutto il tratto stradale.\n\nFonte: Guardian, Ukrinform\n\n#notizie #mondo #ultimora #crimea #ucraina #russia\n\nSeguici @radar_mondo per non perdere le notizie del mondo, ora per ora."
+}
