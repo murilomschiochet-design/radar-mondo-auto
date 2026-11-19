@@ -18,6 +18,7 @@ Você roda de hora em hora, das 06:00 às 23:00 (Roma). A cada rodada: escolhe *
 ## Passo 2 — coletar e escolher
 - `python coletar.py 2` (manchetes das últimas 2 h em `manchetes.json`). Se o comando falhar, use WebFetch nos RSS listados em `coletar.py`.
 - Escolha **uma** notícia: a mais relevante e mais nova que não foi dada. Prefira o que interessa a um leitor italiano curioso (grande impacto, fato inédito, algo que todo mundo vai comentar).
+- **Prioridade para o feed (dados de 18/11):** geopolítica e conflito dão de 5 a 80x mais views — ataque/ação militar de grande potência (13.231 views), encontro de líderes mundiais tipo Xi/Putin/Trump (4.249), eleição com virada, guerra/operação militar (1.780). Tecnologia, ciência, espaço, hackers e economia ficaram entre 130 e 365. Então: se houver notícia forte de geopolítica/conflito/líderes mundiais na janela, **ela vai pro reel**; tecnologia, ciência e curiosidade vão **só pro story**, a não ser que seja algo enorme que todo mundo vai comentar.
 - Abra a matéria (WebFetch) e, se for notícia quente, confira em uma segunda fonte.
 - Se não houver nada forte e novo, **não publique** nesta hora: escreva no relatório "nessuna notizia nuova" e pare.
 
@@ -27,7 +28,7 @@ Você roda de hora em hora, das 06:00 às 23:00 (Roma). A cada rodada: escolhe *
   - até `fim_semana1` do `config.json` (22/11): pelo menos `intervalo_feed_min` (90 min) desde o último post/reel em `publicados.json` (campo `quando` dos itens com `formato` post/reel);
   - depois: pelo menos 60 min.
 - **REEL é o formato principal do feed** (em conta pequena o reel entrega 10x mais que o carrossel: 155 views contra menos de 10). Mas **o feed não pode virar só reel de fundo preto** (fica feio e repetitivo). Regras de variedade (desde 18/11):
-  - `"reel_texto"` **com foto do assunto atrás do texto** é o padrão: escreva `reel_blocos` (3 a 5 blocos curtos, o primeiro é o gancho "🔴 ULTIM'ORA: …", "⚠️ …", o último diz o que acontece agora) **e** `fotos` com 1 foto livre do assunto (lugar, objeto, instituição, avião, foguete…). O robô escurece a foto e põe o texto e o chip por cima, com o crédito.
+  - `"reel_texto"` **com foto do assunto atrás do texto** é o padrão e **quase obrigatório** (o único reel com foto até 18/11 fez 13.231 views; os de fundo preto ficaram entre 130 e 4.249). Procure a foto com 2–3 buscas diferentes (o lugar, o líder, a instituição, o tipo de míssil/navio/avião) antes de desistir: escreva `reel_blocos` (3 a 5 blocos curtos, o primeiro é o gancho "🔴 ULTIM'ORA: …", "⚠️ …", o último diz o que acontece agora) **e** `fotos` com 1 foto livre do assunto (lugar, objeto, instituição, avião, foguete…). O robô escurece a foto e põe o texto e o chip por cima, com o crédito.
   - `"reel_texto"` **sem foto** (fundo preto) só quando não houver foto livre boa, e **nunca dois seguidos** (veja o `formato` dos últimos itens em `itens/` e `publicados.json`).
   - **Carrossel (`"post"`) 2 a 3 por dia**, espalhados (um de manhã, um à tarde, um à noite): quando a notícia tiver uma foto livre forte. Se o último carrossel foi há mais de ~5 h e a notícia tem foto boa, faça carrossel nesta rodada em vez de reel.
   - `"reel"` com fotos em movimento: quando houver 2–3 fotos livres muito fortes do mesmo assunto.
