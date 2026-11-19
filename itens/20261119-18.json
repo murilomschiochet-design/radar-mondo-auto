@@ -1,0 +1,36 @@
+{
+ "id": "20261119-18",
+ "formato": "reel_texto",
+ "chip": "Mondo",
+ "titulo": "Trump, Putin e Xi firmano una «dichiarazione di pace» dopo il primo vertice a tre a Shenzhen",
+ "fontes": [
+  "BBC",
+  "Guardian"
+ ],
+ "links": [
+  "https://www.bbc.co.uk/news/articles/c623j4ln97x7o",
+  "https://www.theguardian.com/world/2026/nov/19/china-russia-us-agree-peace-statement-no-mention-ukraine-iran-wars"
+ ],
+ "story": {
+  "blocos": [
+   "🌍 Trump, Putin e Xi hanno diffuso una «dichiarazione congiunta di pace» dopo il primo vertice a tre, a Shenzhen.",
+   "Secondo la BBC, nel testo: «la guerra nucleare non può essere vinta e non deve mai essere combattuta», più petrolio prodotto e riforma dell'ONU.",
+   "Secondo il Guardian, la dichiarazione non cita le guerre in Ucraina e in Iran."
+  ]
+ },
+ "fatos": [],
+ "reel_blocos": [
+  "🌍 ULTIM'ORA: Trump, Putin e Xi firmano una «dichiarazione di pace».",
+  "Primo vertice a tre, 90 minuti a Shenzhen, a margine dell'Apec.",
+  "«La guerra nucleare non può essere vinta e non deve mai essere combattuta».",
+  "Nel testo: più petrolio, riforma dell'ONU. Secondo il Guardian, nessun cenno a Ucraina e Iran."
+ ],
+ "fotos": [
+  {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Skyline_in_Shenzhen_%2820250327%29.jpg",
+   "credito": "Foto: Fumikas Sagisavas (CC0)",
+   "pos": "50% 50%"
+  }
+ ],
+ "legenda": "Trump, Putin e Xi hanno diffuso una «dichiarazione congiunta di pace» dopo il loro primo vertice a tre, 90 minuti a Shenzhen a margine dell'Apec. Nel testo: «la guerra nucleare non può essere vinta e non deve mai essere combattuta», aumento della produzione di petrolio e riforma dell'ONU. Secondo il Guardian, il documento non menziona le guerre in Ucraina e in Iran.\n\nFonte: BBC, Guardian\n\n#notizie #mondo #ultimora #trump #putin #xi\n\nSeguici @radar_mondo per non perdere le notizie del mondo, ora per ora."
+}
