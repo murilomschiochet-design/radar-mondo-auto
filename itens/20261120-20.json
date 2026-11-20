@@ -1,0 +1,33 @@
+{
+ "id": "20261120-20",
+ "formato": "reel_texto",
+ "chip": "Mondo",
+ "titulo": "Trump: «Con Xi limiti comuni sull'IA». Tassa pesante sui data center costruiti all'estero",
+ "fontes": ["ANSA", "Euronews"],
+ "links": [
+  "https://www.ansa.it/sito/notizie/mondo/2026/11/20/trump-io-e-xi-abbiamo-concordato-di-mettere-paletti-comuni-sullia.-i-data-center-non_09f505ad-f8ba-4714-9f43-d1df034bfc2a.html",
+  "https://www.euronews.com/2026/11/20/trump-accuses-iran-of-dishonesty-while-defending-putin-ties"
+ ],
+ "story": {
+  "blocos": [
+   "🔴 Conferenza stampa alla Casa Bianca: Trump racconta il viaggio in Cina, dove ha incontrato Xi Jinping e Vladimir Putin.",
+   "Sull'intelligenza artificiale: «Io e Xi abbiamo concordato di mettere paletti congiunti». Sui data center: se i giganti tech li costruiranno all'estero, «imporremo una tassa pesante».",
+   "Sull'Ucraina, Trump dice che Putin vuole chiudere la guerra per via diplomatica. Sull'Iran: vuole un «vero accordo»."
+  ]
+ },
+ "fatos": [],
+ "reel_blocos": [
+  "🔴 ULTIM'ORA: Trump dopo il vertice con Xi e Putin, conferenza stampa alla Casa Bianca.",
+  "Sull'IA: «Io e Xi abbiamo concordato di mettere paletti congiunti».",
+  "Data center all'estero? «Imporremo una tassa pesante» alle big tech che li costruiranno fuori dagli Usa.",
+  "Sull'Ucraina: secondo Trump, Putin vuole chiudere la guerra per via diplomatica."
+ ],
+ "fotos": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/South_facade_of_the_White_House%2C_Washington_DC%2C_as_seen_from_the_Washington_Monument.jpg/1920px-South_facade_of_the_White_House%2C_Washington_DC%2C_as_seen_from_the_Washington_Monument.jpg",
+   "credito": "Foto d'archivio: Casa Bianca, Washington (Ad Meskens, CC BY-SA 3.0)",
+   "pos": "50% 50%"
+  }
+ ],
+ "legenda": "Conferenza stampa alla Casa Bianca dopo il viaggio in Cina: Trump dice di aver concordato con Xi dei limiti comuni sull'intelligenza artificiale e annuncia una tassa pesante per le big tech che costruiranno data center all'estero. Sull'Ucraina riferisce che Putin vorrebbe chiudere la guerra per via diplomatica.\n\nFonte: ANSA, Euronews\n\n#notizie #mondo #ultimora #trump #xi #intelligenzaartificiale\n\nSeguici @radar_mondo per non perdere le notizie del mondo, ora per ora."
+}
