@@ -1,0 +1,12 @@
+{
+ "id": "20261120-08",
+ "formato": "story",
+ "chip": "Mondo",
+ "titulo": "",
+ "fontes": ["ANSA", "France24"],
+ "links": ["https://www.ansa.it/sito/notizie/mondo/mediooriente/2026/11/20/tre-morti-e-due-feriti-a-kiev-per-gli-attacchi-russi-della_ab21f2f0-1d1c-4c4e-856c-ac8da6d5dde9.html", "https://www.france24.com/en/europe/20261120-live-deadly-russian-attacks-damage-two-bridges-in-kyiv-mayor-says"],
+ "story": {"blocos": ["🔴 AGGIORNAMENTO: salgono a tre i morti negli attacchi russi su Kiev di questa notte, secondo le autorità cittadine.", "Due i feriti, ha reso noto l'amministrazione militare della capitale. Colpiti due ponti, traffico interrotto.", "L'attacco arriva dopo che Putin aveva promesso una risposta «dolorosa» al danneggiamento del ponte di Crimea."]},
+ "fatos": [],
+ "fotos": [],
+ "legenda": ""
+}
