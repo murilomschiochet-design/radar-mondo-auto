@@ -1,0 +1,36 @@
+{
+ "id": "20261120-22",
+ "formato": "reel_texto",
+ "chip": "Economia",
+ "titulo": "Borse in rosso: l'Europa brucia 370 miliardi, S&P 500 in correzione",
+ "fontes": [
+  "ANSA",
+  "BBC"
+ ],
+ "links": [
+  "https://www.ansa.it/sito/notizie/economia/2026/11/20/la-bolla-ia-gela-i-mercati-leuropa-brucia-370-miliardi.-anthropic-e-wall-street_0ba615f0-de7d-440c-a699-c689e255c19e.html",
+  "https://www.bbc.co.uk/news/articles/c6808ym10vzgo"
+ ],
+ "story": {
+  "blocos": [
+   "🔴 Borse in forte calo da Asia a Europa a Wall Street: i timori sul settore IA pesano sui mercati.",
+   "Europa: 370 miliardi di capitalizzazione bruciati. Francoforte -2,60%, Milano -2,48%. Tokyo -5,26%, Seul -5,21%.",
+   "Wall Street: Nasdaq oltre -3%, S&P 500 in correzione (oltre il 10% sotto il picco di ottobre). Anthropic cede oltre l'11% alla seconda seduta, ma resta sopra gli 83 dollari dell'IPO."
+  ]
+ },
+ "fatos": [],
+ "reel_blocos": [
+  "🔴 ULTIM'ORA: le borse crollano, l'Europa brucia 370 miliardi.",
+  "Tokyo -5,26%, Seul -5,21%, Francoforte -2,60%, Milano -2,48%.",
+  "Wall Street: Nasdaq oltre -3%, S&P 500 in correzione, oltre il 10% sotto il picco di ottobre.",
+  "Anthropic perde oltre l'11% alla seconda seduta, ma resta sopra gli 83 dollari dell'IPO."
+ ],
+ "fotos": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Nasdaq_Tower_May_2026.jpg/1920px-Nasdaq_Tower_May_2026.jpg",
+   "credito": "Foto: Nielsoncaetanosalmeron (CC BY 4.0)",
+   "pos": "50% 40%"
+  }
+ ],
+ "legenda": "Giornata nera sui mercati: in Europa si sono bruciati 370 miliardi di capitalizzazione, Tokyo ha chiuso a -5,26% e Seul a -5,21%. A Wall Street il Nasdaq perde oltre il 3% e l'S&P 500 entra in correzione. Anthropic cede oltre l'11% ma resta sopra il prezzo dell'IPO.\n\nFonte: ANSA, BBC\n\n#notizie #mondo #ultimora #borsa #economia #wallstreet\n\nSeguici @radar_mondo per non perdere le notizie del mondo, ora per ora."
+}
