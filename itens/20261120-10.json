@@ -1,0 +1,35 @@
+{
+ "id": "20261120-10",
+ "formato": "reel_texto",
+ "chip": "Mondo",
+ "titulo": "Polonia: verifiche su una possibile violazione dello spazio aereo durante l'attacco russo all'Ucraina",
+ "fontes": [
+  "ANSA",
+  "PAP"
+ ],
+ "links": [
+  "https://www.ansa.it/sito/notizie/mondo/2026/11/20/forze-armate-polacche-verifiche-su-una-possibile-violazione-dello-spazio-aereo_6104402c-305d-441e-a983-2c8dfb41bd5e.html"
+ ],
+ "story": {
+  "blocos": [
+   "⚠️ La Polonia sta verificando una possibile violazione del proprio spazio aereo durante i nuovi attacchi russi sull'Ucraina.",
+   "Il Comando Operativo parla di un oggetto che potrebbe essere caduto nel distretto di Biłgoraj, probabilmente alle 06:30.",
+   "Le autorità indagano su due possibili violazioni, con dati radar e informazioni di alleati e residenti."
+  ]
+ },
+ "fatos": [],
+ "reel_blocos": [
+  "⚠️ ULTIM'ORA: la Polonia verifica una possibile violazione del suo spazio aereo.",
+  "Durante i nuovi attacchi russi sull'Ucraina, un oggetto potrebbe essere caduto nel distretto di Biłgoraj, probabilmente alle 06:30.",
+  "Le autorità indagano su due possibili violazioni: dati radar, alleati e testimonianze dei residenti.",
+  "Luogo probabile dell'impatto: il villaggio di Chmielek. Per ora è solo una verifica, non una conferma."
+ ],
+ "fotos": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/105_Polish_Air_Force_MiG-29A_Fulcrum_ILA_Berlin_2016_03.jpg/1920px-105_Polish_Air_Force_MiG-29A_Fulcrum_ILA_Berlin_2016_03.jpg",
+   "credito": "Foto d'archivio: Polish Air Force MiG-29, Wikimedia Commons (CC BY 4.0)",
+   "pos": "50% 50%"
+  }
+ ],
+ "legenda": "Il Comando Operativo delle Forze Armate polacche sta verificando una possibile violazione dello spazio aereo durante i nuovi attacchi russi sull'Ucraina. Secondo il portavoce, un oggetto potrebbe essere caduto nel distretto di Biłgoraj, probabilmente alle 06:30. Le autorità indagano su due possibili violazioni; per ora non c'è conferma.\n\nFonte: ANSA, PAP\n\n#notizie #mondo #ultimora #polonia #ucraina #nato\n\nSeguici @radar_mondo per non perdere le notizie del mondo, ora per ora."
+}
