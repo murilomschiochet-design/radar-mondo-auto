@@ -1,0 +1,33 @@
+{
+ "id": "20261120-12",
+ "formato": "reel_texto",
+ "chip": "Mondo",
+ "titulo": "Polonia: il ministro della Difesa conferma un missile Kh-101 russo caduto a Nowy Lipowiec, nessun ferito",
+ "fontes": ["ANSA", "France24", "Reuters", "AFP"],
+ "links": [
+  "https://www.france24.com/en/europe/20261120-poland-says-russian-missile-hit-its-territory-during-attack-on-ukraine",
+  "https://www.ansa.it/sito/notizie/mondo/2026/11/20/ministro-polacco-due-missili-e-un-drone-russo-caduti-sul-nostro-territorio_6104402c-305d-441e-a983-2c8dfb41bd5e.html"
+ ],
+ "story": {
+  "blocos": [
+   "🔴 AGGIORNAMENTO: la Polonia conferma che un missile russo è caduto sul suo territorio durante l'attacco all'Ucraina.",
+   "Il ministro della Difesa Kosiniak-Kamysz: «Ci sono tre siti di impatto. A Nowy Lipowiec confermiamo un missile Kh-101».",
+   "Secondo il ministro, il terzo sito è con ogni probabilità un drone a getto. Nessun ferito, nessun danno alle infrastrutture."
+  ]
+ },
+ "fatos": [],
+ "reel_blocos": [
+  "🔴 ULTIM'ORA: la Polonia conferma, un missile russo è caduto sul suo territorio.",
+  "Il ministro della Difesa Kosiniak-Kamysz: «Tre siti di impatto. A Nowy Lipowiec confermiamo un missile Kh-101».",
+  "Un secondo missile è stato citato; il terzo sito è con ogni probabilità un drone a getto. Nessun ferito.",
+  "Il premier Tusk: al momento nessuna minaccia dall'aria. Due aeroporti erano stati chiusi, ora sono riaperti."
+ ],
+ "fotos": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Part_of_Russian_missile_Kh-101.jpg/1920px-Part_of_Russian_missile_Kh-101.jpg",
+   "credito": "Foto d'archivio: resti di un missile Kh-101, Servizio di sicurezza ucraino (CC BY 4.0)",
+   "pos": "50% 50%"
+  }
+ ],
+ "legenda": "La Polonia conferma che un missile russo è caduto sul suo territorio durante l'attacco all'Ucraina. Il ministro della Difesa Kosiniak-Kamysz parla di tre siti di impatto: a Nowy Lipowiec è stato confermato un missile Kh-101, il terzo sito è probabilmente un drone. Nessun ferito e nessun danno alle infrastrutture. Il premier Tusk: al momento nessuna minaccia dall'aria. L'ambasciata russa a Varsavia non aveva ancora risposto.\n\nFonte: ANSA, France24 (Reuters, AFP)\n\n#notizie #mondo #ultimora #polonia #ucraina #nato\n\nSeguici @radar_mondo per non perdere le notizie del mondo, ora per ora."
+}
