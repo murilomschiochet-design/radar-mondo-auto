@@ -1,0 +1,12 @@
+{
+ "id": "20261121-20",
+ "formato": "story",
+ "chip": "Mondo",
+ "titulo": "",
+ "fontes": ["ANSA"],
+ "links": ["https://www.ansa.it/sito/notizie/mondo/2026/11/21/a-sigonella-accertamenti-in-corso-dopo-il-possibile-sorvolo-di-droni_f2d335b7-be89-4930-bb82-a4ab490d0a88.html"],
+ "story": {"blocos": ["⚠️ Sigonella: un drone non autorizzato è stato rilevato sulla base, che ospita anche l'aviazione Usa. Scatta il protocollo di sicurezza.", "Secondo l'ANSA è un piccolo quadricottero, quasi certamente pilotato da un civile. Ha sorvolato gli alloggi del personale Usa, non la pista. Decolli e atterraggi sospesi per un periodo.", "Sulla base, di giurisdizione italiana, indagano i Carabinieri. Tra le ipotesi: imprudenza o difficoltà nel pilotare il drone."]},
+ "fatos": [],
+ "fotos": [],
+ "legenda": "Drone su Sigonella.\n\nFonte: ANSA"
+}
