@@ -92,7 +92,7 @@ def main():
     legenda = item.get("legenda", "").strip()[:2200]
 
     if formato == "post" and not r.get("feed"):
-        filhos = [api("POST", f"{uid}/media", tok, image_url=f"{midia}/{f}", is_carousel_item="true")["id"] for f in ("post.jpg", "cta.jpg")]
+        filhos = [api("POST", f"{uid}/media", tok, image_url=f"{midia}/{f}", is_carousel_item="true")["id"] for f in ("post.jpg", "post2.jpg", "cta.jpg") if os.path.exists(os.path.join(pasta, f))]
         for f in filhos:
             esperar(tok, f, 300)
         c = api("POST", f"{uid}/media", tok, media_type="CAROUSEL", children=",".join(filhos), caption=legenda)["id"]

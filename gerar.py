@@ -76,6 +76,12 @@ def main():
         tela({"modo": "post", "foto": navegador.url_arquivo(f0["arquivo"]), "pos": f0.get("pos", "50% 40%"), "chip": item["chip"],
               "titulo": item["titulo"], "credito": credito}, os.path.join(pasta, "post.png"), 1080, 1350)
         jpg(os.path.join(pasta, "post.png"), os.path.join(pasta, "post.jpg"))
+        if len(fotos) > 1:   # 2ª foto do carrossel: outra imagem do assunto + o fato principal numa frase
+            f1 = fotos[1]
+            tela({"modo": "post", "foto": navegador.url_arquivo(f1["arquivo"]), "pos": f1.get("pos", "50% 40%"), "chip": item["chip"],
+                  "titulo": item.get("titulo2") or item["titulo"], "credito": f1.get("credito", "")},
+                 os.path.join(pasta, "post2.png"), 1080, 1350)
+            jpg(os.path.join(pasta, "post2.png"), os.path.join(pasta, "post2.jpg"))
         tela({"modo": "cta", "blocos": CTA}, os.path.join(pasta, "cta.png"), 1080, 1350)
         jpg(os.path.join(pasta, "cta.png"), os.path.join(pasta, "cta.jpg"))
 
