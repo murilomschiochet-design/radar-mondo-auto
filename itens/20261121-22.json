@@ -1,0 +1,12 @@
+{
+ "id": "20261121-22",
+ "formato": "story",
+ "chip": "Mondo",
+ "titulo": "",
+ "fontes": ["ANSA", "France24"],
+ "links": ["https://www.ansa.it/sito/notizie/mondo/2026/11/21/alta-tensione-nel-mar-baltico-colpita-una-nave-cargo-russa-_6c554c1c-64b6-45fd-915b-a300479d2bbc.html", "https://www.france24.com/en/europe/20261121-drone-attack-sets-russian-cargo-ship-ablaze-in-gulf-of-finland"],
+ "story": {"blocos": ["🔴 Golfo di Finlandia, aggiornamento: l'esercito finlandese ritiene probabile un coinvolgimento dell'Ucraina nell'attacco con drone alla nave russa Sparta II.", "Il premier finlandese Petteri Orpo: «La guerra si sta estendendo alle nostre immediate vicinanze». Helsinki ha avvisato la Nato.", "Mosca non ha confermato i danni: il governatore di Leningrado dice che la nave riprenderà la rotta verso Kaliningrad."]},
+ "fatos": [],
+ "fotos": [],
+ "legenda": ""
+}
