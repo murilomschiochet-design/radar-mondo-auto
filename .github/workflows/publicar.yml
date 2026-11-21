@@ -37,7 +37,7 @@ jobs:
       - name: Quais noticias ainda nao foram publicadas
         id: novos
         run: |
-          python -c "import json,os,glob;r=json.load(open('publicados.json')) if os.path.exists('publicados.json') else {};n=[os.path.basename(f)[:-5] for f in sorted(glob.glob('itens/*.json')) if os.path.basename(f)[:-5] not in r and not f.endswith('teste.json')];print('ids='+' '.join(n[-3:]))" >> "$GITHUB_OUTPUT"
+          python pendentes.py >> "$GITHUB_OUTPUT"   # so a mais nova; as atrasadas viram "pulada" (nunca 2 reels juntos)
       - name: Gerar artes
         run: |
           for id in ${{ steps.novos.outputs.ids }}; do python gerar.py $id; done
@@ -56,7 +56,9 @@ jobs:
           IG_TOKEN: ${{ secrets.IG_TOKEN }}
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
         run: |
-          for id in ${{ steps.novos.outputs.ids }}; do python publicar.py $id || echo "falhou: $id"; done
+          for id in ${{ steps.novos.outputs.ids }}; do
+            for t in 1 2 3; do python publicar.py $id && break; echo "falhou ($t/3): $id"; sleep $((t*45)); done
+          done
       - name: Salvar registro
         if: always()
         run: |
