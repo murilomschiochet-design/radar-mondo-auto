@@ -1,0 +1,13 @@
+{
+ "id": "20261121-10",
+ "formato": "reel_texto",
+ "chip": "Hacker",
+ "titulo": "Nuovo attacco hacker all'Fbi: secondo la Cnn violato l'archivio criminale",
+ "fontes": ["ANSA", "CNN"],
+ "links": ["https://www.ansa.it/sito/notizie/mondo/nordamerica/2026/11/21/la-cnn-nuovo-attacco-hacker-allfbi-violato-larchivio-criminale_38f6033c-fb4e-4c0c-8cb1-c64f4c15b671.html"],
+ "story": {"blocos": ["💻 Secondo la Cnn, nuovo attacco hacker all'Fbi: sarebbe stato violato l'archivio criminale (Ncic).", "La notizia è riferita da due persone informate sull'indagine. L'Fbi non ha risposto subito alla richiesta di commento.", "A settembre il gruppo ShinyHunters aveva sottratto dati personali dei dipendenti da un portale di lavoro dell'Fbi."]},
+ "fatos": [],
+ "reel_blocos": ["💻 ULTIM'ORA: nuovo attacco hacker all'Fbi, secondo la Cnn.", "Sarebbe stato violato l'archivio criminale nazionale, l'Ncic.", "La fonte: due persone informate sull'indagine. L'Fbi indaga.", "A settembre, dati dei dipendenti rubati da un portale di lavoro dell'Fbi."],
+ "fotos": [{"url": "https://upload.wikimedia.org/wikipedia/commons/0/0e/J._Edgar_Hoover_Building.png", "credito": "Foto: FBI (pubblico dominio)", "pos": "50% 50%"}],
+ "legenda": "Secondo la Cnn, citata dall'ANSA, l'Fbi sta indagando su un nuovo attacco hacker: sarebbe stato violato l'archivio criminale nazionale (Ncic). La notizia è riferita da due persone informate sull'indagine; l'Fbi non ha risposto subito alla richiesta di commento. A settembre il gruppo ShinyHunters aveva sottratto dati personali dei dipendenti da un portale di lavoro dell'Fbi.\n\nFonte: ANSA, CNN\n\n#notizie #mondo #ultimora #hacker #fbi #cybersecurity\n\nSeguici @radar_mondo per non perdere le notizie del mondo, ora per ora."
+}
