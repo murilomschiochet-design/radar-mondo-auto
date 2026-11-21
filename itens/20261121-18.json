@@ -1,0 +1,36 @@
+{
+ "id": "20261121-18",
+ "formato": "post",
+ "chip": "Mondo",
+ "titulo": "Hormuz: due petroliere colpite da proiettili non identificati, nessuna vittima",
+ "titulo2": "Teheran: una petroliera in fiamme per una mina navale. Circa 25 incidenti in una settimana, secondo Al Jazeera.",
+ "fontes": [
+  "Al Jazeera",
+  "ANSA"
+ ],
+ "links": [
+  "https://www.aljazeera.com/news/2026/11/21/tankers-hit-in-strait-of-hormuz-as-iran-tightens-grip-on-shipping",
+  "https://www.ansa.it/sito/notizie/mondo/mediooriente/2026/11/21/ukmto-seconda-petroliera-colpita-a-hormuz-nessuna-vittima_70acec97-3889-4792-bb03-e6317c7eddb0.html"
+ ],
+ "story": {
+  "blocos": [
+   "⚠️ Hormuz: l'Ukmto segnala due petroliere colpite da proiettili non identificati vicino a Khasab, in Oman.",
+   "Una è stata colpita nella sala macchine a circa 31 km a est di Khasab. Nessuna vittima.",
+   "L'Iran dice che una petroliera ha preso fuoco per una mina navale. Versione non verificata in modo indipendente."
+  ]
+ },
+ "fatos": [],
+ "fotos": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/A_port_view_of_the_guided_missile_frigate_USS_TAYLOR_%28FFG-50%29_as_it_passes_a_tanker_after_going_through_the_Strait_of_Hormuz_during_Operation_Desert_Shield_-_DPLA_-_1fb70620034c5304df096b4526972ace.jpeg/1920px-thumbnail.jpeg",
+   "credito": "Foto d'archivio: US Department of Defense (pubblico dominio)",
+   "pos": "50% 50%"
+  },
+  {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/0/04/Iranian_naval_forces_board_MT_Wila%2C_August_12%2C_2020.jpg",
+   "credito": "Foto d'archivio (2020): NAVCENT Public Affairs (pubblico dominio)",
+   "pos": "50% 50%"
+  }
+ ],
+ "legenda": "Due petroliere sono state colpite da proiettili non identificati nello Stretto di Hormuz, secondo l'Ukmto: una a circa 20 km a nord di Khasab (Oman), l'altra nella sala macchine a circa 31 km a est. Nessuna vittima. La marina iraniana afferma che una petroliera ha preso fuoco per una mina navale, versione non verificata in modo indipendente. Al Jazeera parla di circa 25 incidenti dalla scorsa settimana.\n\nFonte: Al Jazeera, ANSA\n\n#notizie #mondo #ultimora #hormuz #iran #petrolio\n\nSeguici @radar_mondo per non perdere le notizie del mondo, ora per ora."
+}
