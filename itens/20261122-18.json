@@ -1,0 +1,16 @@
+{
+ "id": "20261122-18",
+ "formato": "post",
+ "chip": "Mondo",
+ "titulo": "Libia: esplosione su una nave russa nel porto di Bengasi, sospetto attacco di drone",
+ "titulo2": "Il governo dell'est: nessuna vittima. Secondo Axios, un attacco a lungo raggio dell'Sbu ucraino",
+ "fontes": ["BBC", "DW", "ANSA"],
+ "links": ["https://www.bbc.co.uk/news/articles/cr894gjz0j0yo", "https://www.dw.com/en/libya-suspected-drone-attack-hits-russian-ship-in-benghazi/a-80014545", "https://www.ansa.it/sito/notizie/mondo/africa/2026/11/22/media-nave-russa-colpita-in-libia-da-attacco-a-lungo-raggio-ucraino_0c7df80f-d236-48ee-82b2-672a1d937471.html"],
+ "story": {"blocos": ["🔴 Libia: esplosione su una nave russa ormeggiata nel porto di Bengasi, all'alba di domenica. Si sospetta un attacco di drone.", "Il governo della Libia orientale: la nave faceva rifornimento nel viaggio di ritorno verso la Russia. Nessuna vittima.", "Secondo Axios, che cita una fonte anonima, sarebbe un attacco a lungo raggio dell'Sbu ucraino. Nessuna conferma ufficiale, Mosca non ha commentato."]},
+ "fatos": [],
+ "fotos": [
+  {"url": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Port_of_Benghazi_1.jpg", "credito": "Foto: Salema younus (CC BY 4.0)", "pos": "50% 50%"},
+  {"url": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Port_of_Benghazi_2.jpg", "credito": "Foto: Salema younus (CC BY 4.0)", "pos": "50% 50%"}
+ ],
+ "legenda": "Un'esplosione ha colpito una nave russa attraccata nel porto di Bengasi, in Libia, all'alba di domenica. Il governo della Libia orientale parla di sospetto attacco di drone e di nessuna vittima; la nave era in sosta per rifornimenti sulla via del ritorno in Russia. Secondo Axios, che cita una fonte anonima, si tratterebbe di un attacco a lungo raggio dell'Sbu ucraino: non ci sono conferme ufficiali e Mosca non ha commentato.\n\nFonte: BBC, DW, ANSA\n\n#notizie #mondo #ultimora #libia #russia #ucraina\n\nSeguici @radar_mondo per non perdere le notizie del mondo, ora per ora."
+}
