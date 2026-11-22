@@ -1,0 +1,13 @@
+{
+ "id": "20261122-12",
+ "formato": "reel_texto",
+ "chip": "Mondo",
+ "titulo": "Ucraina: drone russo colpisce un palazzo a Dymer, vicino Kiev. Zelensky: 14 dispersi",
+ "fontes": ["Euronews", "France24"],
+ "links": ["https://www.euronews.com/video/2026/11/22/ukraine-up-to-seven-feared-trapped-beneath-rubble-near-kyiv-after-russian-attack", "https://www.france24.com/en/europe/20261122-live-finland-says-war-spilling-over-after-baltic-sea-drone-strike-on-russian-cargo-ship"],
+ "story": {"blocos": ["🔴 Ucraina: un drone russo ha colpito un palazzo residenziale di cinque piani a Dymer, a nord di Kiev.", "Nove residenti, tra cui un bambino, sono stati evacuati. Zelensky parla di 14 persone disperse.", "I soccorritori del Servizio di emergenza ucraino cercano ancora tra le macerie."]},
+ "fatos": [],
+ "reel_blocos": ["🔴 ULTIM'ORA: drone russo colpisce un palazzo a Dymer, vicino Kiev.", "L'edificio di cinque piani è stato distrutto in parte. Nove persone evacuate, tra cui un bambino.", "Zelensky: almeno 14 persone risultano disperse.", "Le squadre di soccorso cercano ancora tra le macerie."],
+ "fotos": [{"url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Dymer_Shevchenko_st.JPG/1920px-Dymer_Shevchenko_st.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail", "credito": "Foto: Аимаина хикари (CC BY-SA 4.0)", "pos": "50% 50%"}],
+ "legenda": "Un drone russo ha colpito domenica un palazzo residenziale di cinque piani a Dymer, a nord di Kiev. Nove residenti, tra cui un bambino, sono stati evacuati; il presidente Zelensky parla di almeno 14 persone disperse. I soccorritori lavorano tra le macerie.\n\nFonte: Euronews, France24\n\nSeguici @radar_mondo per non perdere le notizie del mondo, ora per ora.\n\n#ucraina #kiev #ultimora #notizie #mondo"
+}
