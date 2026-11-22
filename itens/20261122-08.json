@@ -1,0 +1,16 @@
+{
+ "id": "20261122-08",
+ "formato": "story",
+ "chip": "Mondo",
+ "titulo": "",
+ "fontes": ["BBC", "DW"],
+ "links": ["https://www.bbc.co.uk/news/articles/cw8dvg5pgm0eo", "https://www.dw.com/en/dozens-missing-as-deadly-fire-hits-indonesian-candy-factory/a-80012342"],
+ "story": {"blocos": [
+  "🔴 Indonesia: incendio in una fabbrica di dolciumi a Banten, nell'isola di Giava. Almeno 3 morti e 36 lavoratori ancora dispersi.",
+  "Il rogo è scoppiato sabato pomeriggio nello stabilimento PT Fonusa Agung Mulia, a circa 50 km da Giacarta. Secondo il governatore, nell'edificio c'erano circa 60 persone.",
+  "I soccorritori cercano i dispersi. La causa dell'incendio non è ancora stata accertata."
+ ]},
+ "fatos": [],
+ "fotos": [],
+ "legenda": "Incendio in una fabbrica di dolciumi a Banten, in Indonesia: almeno 3 morti e 36 dispersi.\n\nFonte: BBC, DW\n\n#notizie #mondo #indonesia #ultimora"
+}
