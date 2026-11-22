@@ -1,0 +1,35 @@
+{
+ "id": "20261122-20",
+ "formato": "reel_texto",
+ "chip": "Mondo",
+ "titulo": "Trump: senza accordo con l'Iran, nuovi attacchi dopo Capodanno",
+ "fontes": [
+  "ANSA",
+  "Jerusalem Post"
+ ],
+ "links": [
+  "https://www.ansa.it/sito/notizie/mondo/mediooriente/2026/11/22/trump-ribadisce-senza-accordo-riprendo-gli-attacchi-contro-liran-a-inizio_95ccd991-f4fe-4147-866c-aca38d5718a1.html",
+  "https://www.jpost.com/international/article-915744"
+ ],
+ "story": {
+  "blocos": [
+   "🔴 Trump, in un'intervista a Fox News: se non ci sarà un accordo con l'Iran, è incline a riprendere i grandi attacchi dopo il 1° gennaio.",
+   "I negoziati indiretti con Teheran, con il Qatar come intermediario, sono ancora in corso. Il blocco navale Usa dei porti iraniani resta in vigore.",
+   "Sulle navi iraniane che sfidano il blocco: «Finiranno tutte in fondo al mare». Nessuna decisione finale annunciata."
+  ]
+ },
+ "reel_blocos": [
+  "🔴 ULTIM'ORA: Trump torna a minacciare l'Iran.",
+  "Intervista a Fox News: senza accordo, è incline a riprendere i grandi attacchi dopo il 1° gennaio.",
+  "I negoziati indiretti, con il Qatar come mediatore, sono ancora in corso. Il blocco navale Usa resta in vigore.",
+  "Nessuna decisione finale è stata annunciata."
+ ],
+ "fotos": [
+  {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/9/92/Flickr_-_Official_U.S._Navy_Imagery_-_The_Nimitz-class_aircraft_carrier_USS_Carl_Vinson_%28CVN_70%29_is_underway_in_the_Arabian_Sea..jpg",
+   "credito": "Foto d'archivio: U.S. Navy / MC2 James R. Evans (pubblico dominio)",
+   "pos": "50% 50%"
+  }
+ ],
+ "legenda": "Intervista a Fox News: Donald Trump dice di essere incline a riprendere i grandi attacchi contro l'Iran dopo il 1° gennaio, se non si arriverà a un accordo. I negoziati indiretti con Teheran, con il Qatar come intermediario, sono ancora in corso e il blocco navale Usa dei porti iraniani resta in vigore. Nessuna decisione finale è stata annunciata.\n\nFonte: ANSA, Jerusalem Post\n\nSeguici @radar_mondo per non perdere le notizie del mondo, ora per ora.\n\n#notizie #mondo #ultimora #iran #usa #geopolitica"
+}
