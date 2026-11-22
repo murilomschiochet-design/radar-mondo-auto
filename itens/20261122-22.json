@@ -1,0 +1,38 @@
+{
+ "id": "20261122-22",
+ "formato": "reel_texto",
+ "chip": "Mondo",
+ "titulo": "USA, i Democratici conquistano almeno 258 seggi alla Camera: il miglior risultato dal 1992",
+ "fontes": [
+  "ANSA",
+  "France24",
+  "Guardian"
+ ],
+ "links": [
+  "https://www.france24.com/en/americas/20261122-democrat-hubbard-wins-north-carolina-recount-clinching-historic-house-majority",
+  "https://www.theguardian.com/us-news/2026/nov/22/house-democrats-historic-sweep",
+  "https://www.ansa.it/sito/notizie/mondo/nordamerica/2026/11/22/i-dem-conquistano-il-258esimo-seggio-alla-camera-battuto-il-record-del-2008_dab551d5-874c-411e-8eb7-20abfb036970.html"
+ ],
+ "story": {
+  "blocos": [
+   "🔴 USA: i Democratici raggiungono almeno 258 seggi alla Camera, il miglior risultato dal 1992, dopo le elezioni di metà mandato.",
+   "A decidere è il seggio del North Carolina: il democratico Chuck Hubbard ha battuto, dopo il riconteggio, il repubblicano Virginia Foxx.",
+   "I Repubblicani si fermano ad almeno 173 seggi. Restano da assegnare quattro seggi."
+  ]
+ },
+ "fatos": [],
+ "reel_blocos": [
+  "🔴 ULTIM'ORA: i Democratici vincono la Camera USA con almeno 258 seggi.",
+  "È il miglior risultato dal 1992, dopo le elezioni di metà mandato.",
+  "In North Carolina Chuck Hubbard ha battuto Virginia Foxx dopo il riconteggio.",
+  "I Repubblicani restano ad almeno 173 seggi. Mancano ancora quattro seggi da assegnare."
+ ],
+ "fotos": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Capitol_Building_Full_View.jpg/1920px-Capitol_Building_Full_View.jpg",
+   "credito": "Foto: Noclip (pubblico dominio)",
+   "pos": "50% 50%"
+  }
+ ],
+ "legenda": "I Democratici hanno conquistato almeno 258 seggi alla Camera degli Stati Uniti, il miglior risultato dal 1992 alle elezioni di metà mandato. Il seggio decisivo è quello del North Carolina, dove Chuck Hubbard ha battuto il repubblicano Virginia Foxx dopo il riconteggio. I Repubblicani hanno almeno 173 seggi.\n\nFonte: ANSA, France24, Guardian\n\nSeguici @radar_mondo per non perdere le notizie del mondo, ora per ora.\n\n#notizie #mondo #ultimora #usa #elezioni #camera"
+}
