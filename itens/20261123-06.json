@@ -1,0 +1,36 @@
+{
+ "id": "20261123-06",
+ "formato": "reel_texto",
+ "chip": "Mondo",
+ "titulo": "Dymer: dopo l'attacco russo estratti vivi un bambino di 7 anni e una donna di 79",
+ "fontes": [
+  "ANSA",
+  "BBC",
+  "Al Jazeera"
+ ],
+ "links": [
+  "https://www.ansa.it/sito/notizie/topnews/2026/11/23/kiev-bilancio-vittime-dymer-sale-a-9-si-scava-ancora-tra-le-macerie_ba991ba4-055e-4f2b-bee0-f9faf48770d9.html",
+  "https://www.aljazeera.com/video/newsfeed/2026/11/23/child-rescued-in-ukraine-after-russian-drone-attack-kills-10"
+ ],
+ "story": {
+  "blocos": [
+   "🔴 Dymer, vicino a Kiev: il bilancio dell'attacco russo di domenica sale a 9 morti secondo le autorità di Kiev (ANSA).",
+   "Estratti vivi dalle macerie un bambino di 7 anni, dopo circa 14 ore (Al Jazeera), e una donna di 79 anni.",
+   "Le ricerche continuano. BBC e Al Jazeera parlano di 10 morti."
+  ]
+ },
+ "reel_blocos": [
+  "🔴 ULTIM'ORA: Dymer, vicino a Kiev, si scava ancora tra le macerie.",
+  "Il bilancio dell'attacco russo sale a 9 morti secondo Kiev. BBC e Al Jazeera parlano di 10.",
+  "Un bambino di 7 anni è stato estratto vivo dopo circa 14 ore.",
+  "Salvata anche una donna di 79 anni. Le ricerche continuano."
+ ],
+ "fotos": [
+  {
+   "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/Clearing_debris_of_a_residential_building_in_Kyiv%2C_2022-04-20_%28962896%29.jpg/1920px-Clearing_debris_of_a_residential_building_in_Kyiv%2C_2022-04-20_%28962896%29.jpg",
+   "credito": "Foto d'archivio (Kiev, 2022): Oleksii Samsonov / Kyiv City State Administration (CC BY 4.0)",
+   "pos": "50% 50%"
+  }
+ ],
+ "legenda": "Nuovo bilancio a Dymer, a nord di Kiev: dopo l'attacco russo con drone contro un palazzo di cinque piani, le autorità di Kiev parlano di 9 morti (BBC e Al Jazeera: 10). Dalle macerie sono stati estratti vivi un bambino di 7 anni, dopo circa 14 ore, e una donna di 79 anni. Le ricerche proseguono.\n\nFonte: ANSA, BBC, Al Jazeera\n\nSeguici @radar_mondo per non perdere le notizie del mondo, ora per ora.\n\n#ucraina #kiev #ultimora #notizie #mondo"
+}
