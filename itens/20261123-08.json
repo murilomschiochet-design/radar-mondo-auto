@@ -1,0 +1,13 @@
+{
+ "id": "20261123-08",
+ "formato": "reel_texto",
+ "chip": "Mondo",
+ "titulo": "Bengasi: le immagini satellitari mostrano la nave russa Merkury rovesciata dopo il sospetto attacco di droni",
+ "fontes": ["Euronews", "France24", "AP"],
+ "links": ["https://www.euronews.com/2026/11/23/satellite-images-show-russian-warship-capsized-in-libya-after-suspected-ukrainian-drone-st", "https://www.france24.com/en/africa/20261122-russian-warship-hit-by-suspected-ukrainian-drone-at-libya-s-benghazi-naval-base", "https://www.euronews.com/2026/11/23/un-mission-in-libya-urges-probe-after-russian-ship-hit-by-drones-off-benghazi"],
+ "story": {"blocos": ["🔴 Bengasi: le immagini satellitari mostrano la corvetta russa Merkury rovesciata nel porto, dopo l'esplosione di domenica.", "Per i funzionari libici, due droni navali l'hanno colpita; almeno quattro sono stati intercettati. Dicono che siano partiti da una base gestita da forze ucraine nell'ovest della Libia.", "Nessuno ha rivendicato l'attacco. L'Onu in Libia chiede un'indagine indipendente e trasparente."]},
+ "fatos": [],
+ "reel_blocos": ["🔴 ULTIM'ORA: Bengasi, la nave militare russa Merkury è rovesciata nel porto.", "Lo mostrano le immagini satellitari, dopo l'attacco di droni navali di domenica.", "Per i funzionari libici, due droni hanno colpito la nave. Almeno quattro sono stati intercettati.", "Nessuno ha rivendicato l'attacco. L'Onu chiede un'indagine indipendente."],
+ "fotos": [{"url": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Port_of_Benghazi_2.jpg", "credito": "Foto: Salema younus (CC BY 4.0)", "pos": "50% 50%"}],
+ "legenda": "Le immagini satellitari mostrano la corvetta russa Merkury rovesciata nel porto di Bengasi, in Libia, dopo l'esplosione di domenica. Secondo i funzionari libici, due droni navali hanno colpito la nave e almeno quattro sono stati intercettati. Nessuno ha rivendicato l'attacco; la missione Onu in Libia chiede un'indagine indipendente e trasparente.\n\nFonte: Euronews, France24, AP\n\n#notizie #mondo #ultimora #libia #russia #ucraina\n\nSeguici @radar_mondo per non perdere le notizie del mondo, ora per ora."
+}
