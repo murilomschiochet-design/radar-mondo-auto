@@ -1,0 +1,16 @@
+{
+ "id": "20261123-18",
+ "formato": "post",
+ "chip": "Tecnologia",
+ "titulo": "Nvidia riporta Jensen Huang alla guida: le azioni volano del 33%",
+ "titulo2": "Il titolo guadagna il 33% e oltre mille miliardi di dollari di capitalizzazione in un giorno",
+ "fontes": ["Guardian", "France24", "BBC", "Al Jazeera"],
+ "links": ["https://www.theguardian.com/technology/2026/nov/23/jensen-huang-reinstated-as-nvidia-chief-executive", "https://www.france24.com/en/americas/20261123-nvidia-board-reinstates-disgraced-jensen-huang-as-ceo-president-says"],
+ "story": {"blocos": ["💻 Nvidia ha reintegrato Jensen Huang come amministratore delegato, con effetto immediato.", "Si era dimesso il 12 novembre dopo la notizia di relazioni extraconiugali, una con una donna che gli Usa sospettano di spionaggio per la Cina (Pechino nega).", "Il titolo è balzato del 33% a New York. Un'indagine indipendente è ancora in corso."]},
+ "fatos": [],
+ "fotos": [
+  {"url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Director_L%C3%AA_Nguy%E1%BB%85n_Thi%C3%AAn_Nga_and_NVIDIA_Founder_and_CEO_Jensen_Huang.jpg/1920px-Director_L%C3%AA_Nguy%E1%BB%85n_Thi%C3%AAn_Nga_and_NVIDIA_Founder_and_CEO_Jensen_Huang.jpg", "credito": "Foto: VQTCS (CC BY 4.0)", "pos": "50% 40%"},
+  {"url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/NVIDIA_Headquarters.jpg/1920px-NVIDIA_Headquarters.jpg", "credito": "Foto: Coolcaesar (CC BY-SA 4.0)", "pos": "50% 50%"}
+ ],
+ "legenda": "Nvidia ha reintegrato Jensen Huang come CEO, con effetto immediato, pochi giorni dopo le sue dimissioni del 12 novembre per la notizia di relazioni extraconiugali, una con una donna sospettata dagli Usa di spionaggio per la Cina (Pechino nega). Il titolo è salito del 33% a New York. Il presidente Trump aveva chiesto il suo ritorno; Nvidia dice di aver ricevuto input da \"senior levels\" del governo Usa e che il rientro \"non pone rischi per la sicurezza nazionale\". L'indagine indipendente prosegue.\n\nFonte: Guardian, France24, BBC, Al Jazeera\n\n#nvidia #jensenhuang #tecnologia #ultimora #mondo\n\nSeguici @radar_mondo per non perdere le notizie del mondo, ora per ora."
+}
