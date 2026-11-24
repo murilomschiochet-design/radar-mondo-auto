@@ -1,0 +1,13 @@
+{
+ "id": "20261124-16",
+ "formato": "reel_texto",
+ "chip": "Mondo",
+ "titulo": "Fuga di dati Rosstat: almeno 490.000 soldati russi morti in Ucraina, secondo i certificati di morte",
+ "fontes": ["Euronews"],
+ "links": ["https://www.euronews.com/2026/11/24/at-least-490000-russian-soldiers-killed-in-ukraine-rosstat-data-leak-reveals"],
+ "story": {"blocos": ["🔴 Dati Rosstat trapelati: almeno 490.000 militari russi morti in Ucraina dall'inizio dell'invasione, secondo Euronews.", "Il dato viene dai certificati di morte registrati fino a fine agosto 2026. Esclusi i dispersi e i decessi non ancora registrati.", "I dati sarebbero stati sottratti il 1° novembre dai gruppi hacker Cyber Partisans of Belarus e Silent Crow. Il Cremlino non pubblica né riconosce le cifre delle perdite."]},
+ "fatos": [],
+ "reel_blocos": ["🔴 ULTIM'ORA: fuga di dati dall'agenzia statistica russa Rosstat.", "Almeno 490.000 militari russi morti in Ucraina, secondo i certificati di morte registrati fino a fine agosto 2026.", "Il dato esclude i dispersi e i decessi non ancora registrati.", "I dati sarebbero stati sottratti il 1° novembre da due gruppi hacker. Il Cremlino non riconosce le cifre delle perdite."],
+ "fotos": [{"url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Moscow_-_2026_-_Kremlin_Wall_between_the_Vodovzvodnaya_and_the_Annunciation_Towers.jpg/1920px-Moscow_-_2026_-_Kremlin_Wall_between_the_Vodovzvodnaya_and_the_Annunciation_Towers.jpg", "credito": "Foto: Юрий Д.К. (CC BY 4.0)", "pos": "50% 50%"}],
+ "legenda": "Almeno 490.000 militari russi sarebbero morti in Ucraina dal 2022, secondo dati trapelati dall'agenzia statistica russa Rosstat e riportati da Euronews. La cifra deriva dai certificati di morte registrati fino a fine agosto 2026 ed esclude dispersi e decessi non ancora registrati. I dati sarebbero stati sottratti il 1° novembre dai gruppi Cyber Partisans of Belarus e Silent Crow. Il Cremlino non pubblica né riconosce le cifre delle proprie perdite.\n\nFonte: Euronews\nFoto: Юрий Д.К. (CC BY 4.0)\n\nSeguici @radar_mondo per non perdere le notizie del mondo, ora per ora.\n\n#notizie #mondo #ultimora #russia #ucraina #hacker"
+}
