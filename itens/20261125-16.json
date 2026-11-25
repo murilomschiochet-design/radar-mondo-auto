@@ -1,0 +1,13 @@
+{
+ "id": "20261125-16",
+ "formato": "reel_texto",
+ "chip": "Economia",
+ "titulo": "Gli USA propongono nuovi dazi su UE, Cina e altri 12 paesi",
+ "fontes": ["ANSA", "France24", "DW"],
+ "links": ["https://www.france24.com/en/americas/20261125-trump-announces-new-tariffs-eu-china-despite-us-midterms-defeat", "https://www.ansa.it/sito/notizie/mondo/nordamerica/2026/11/25/ue-a-usa-non-siamo-fonte-di-sovraccapacita-si-rispetti-limite-15-sui-dazi_2e64f31e-356c-43ce-9474-94c90d399119.html"],
+ "story": {"blocos": ["🌍 Gli Stati Uniti propongono nuovi dazi su 14 economie, tra cui Unione europea, Cina, Giappone e Taiwan.", "Per la Cina si parla del 20%. Per Bruxelles fino al 15%, secondo ANSA.", "La Commissione Ue respinge la premessa dell'indagine e chiede il rispetto del tetto del 15%."]},
+ "fatos": [],
+ "reel_blocos": ["🔴 ULTIM'ORA: gli USA propongono nuovi dazi su 14 economie.", "Tra i paesi coinvolti: Unione europea, Cina, Giappone e Taiwan.", "Per la Cina si parla del 20%; per l'Ue fino al 15%, secondo ANSA.", "Bruxelles: «Respingiamo la premessa dell'indagine». Chiede il rispetto del tetto del 15%."],
+ "fotos": [{"url": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Container_ship_-_Cosco_Belgium_-_Europahaven_Yangtzekanaal_-_Port_of_Rotterdam_%2825432477941%29.jpg", "credito": "Foto: Frans Berkelaar (CC BY 2.0)", "pos": "50% 50%"}],
+ "legenda": "L'amministrazione Trump ha proposto nuovi dazi su 14 economie, tra cui Ue, Cina, Giappone e Taiwan, dopo un'indagine sulla sovraccapacità produttiva. Per la Cina si parla del 20%. La Commissione europea respinge la premessa dell'indagine e si aspetta il rispetto del tetto del 15%. Si tratta di proposte, non ancora in vigore.\n\nFonte: ANSA, France24, DW\n\n#notizie #mondo #ultimora #dazi #economia #usa\n\nSeguici @radar_mondo per non perdere le notizie del mondo, ora per ora."
+}
