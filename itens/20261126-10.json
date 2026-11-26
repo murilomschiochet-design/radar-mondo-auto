@@ -1,0 +1,16 @@
+{
+ "id": "20261126-10",
+ "formato": "post",
+ "chip": "Mondo",
+ "titulo": "Bangkok: forte esplosione in un deposito di petrolio, fiammata e fumo nero sulla città",
+ "titulo2": "Le autorità del distretto di Bang Na invitano i residenti a evacuare. Nessuna vittima segnalata finora.",
+ "fontes": ["France24", "Al Jazeera"],
+ "links": ["https://www.france24.com/en/asia-pacific/20261126-huge-explosion-at-oil-depot-in-bangkok-sends-fireball-into-sky", "https://www.aljazeera.com/news/2026/11/26/explosion-occurs-at-oil-facility-in-thailands-bangkok"],
+ "story": {"blocos": ["🔴 Bangkok: forte esplosione nel deposito di petrolio Bangchak, nell'est della capitale.", "Una palla di fuoco e fumo nero si alzano sulla città. L'ufficio del distretto di Bang Na chiede ai residenti di evacuare subito.", "Nessuna vittima segnalata per ora. La causa non è stata resa nota."]},
+ "fatos": [],
+ "fotos": [
+  {"url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Bangkok_skyline%2C_Bangkok%2C_Thailand.jpg/1920px-Bangkok_skyline%2C_Bangkok%2C_Thailand.jpg", "credito": "Foto d'archivio: Vyacheslav Argenberg (CC BY 4.0)", "pos": "50% 50%"},
+  {"url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Blue_hour_fog_over_Preemraff_oil_refinery_by_Brofjorden.jpg/1920px-Blue_hour_fog_over_Preemraff_oil_refinery_by_Brofjorden.jpg", "credito": "Foto d'archivio (raffineria generica): W.carter (CC BY-SA 4.0)", "pos": "50% 50%"}
+ ],
+ "legenda": "Una forte esplosione ha colpito il deposito di petrolio Bangchak, nell'est di Bangkok. Secondo i giornalisti AFP, una palla di fuoco e fumo nero si sono alzati sulla capitale thailandese. L'ufficio del distretto di Bang Na ha invitato i residenti vicini a evacuare. Al momento non risultano vittime e la causa non è stata comunicata.\n\nFonte: France24, Al Jazeera (AFP)\n\n#notizie #mondo #ultimora #bangkok #thailandia\n\nSeguici @radar_mondo per non perdere le notizie del mondo, ora per ora."
+}
