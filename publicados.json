@@ -574,5 +574,15 @@
  "20261126-16": {
   "pulada": "ficou atrasada (falha numa rodada anterior)",
   "quando": "2026-11-26T17:04+00:00"
+ },
+ "20261126-18": {
+  "pulada": "ficou atrasada (falha numa rodada anterior)",
+  "quando": "2026-11-26T18:00+00:00"
+ },
+ "20261126-19": {
+  "feed": "17920040703332970",
+  "formato": "reel",
+  "story": "18126626618291160",
+  "quando": "2026-11-26T18:02+00:00"
  }
 }
