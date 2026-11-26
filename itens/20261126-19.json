@@ -1,0 +1,56 @@
+{
+ "id": "20261126-19",
+ "formato": "reel_video",
+ "chip": "Mondo",
+ "titulo": "Bangkok: esplosione e incendio nella raffineria Bangchak, fumo nero sulla città",
+ "fontes": [
+  "France24",
+  "Al Jazeera",
+  "MGR Online"
+ ],
+ "links": [
+  "https://www.france24.com/en/asia-pacific/20261126-huge-explosion-at-oil-depot-in-bangkok-sends-fireball-into-sky",
+  "https://www.youtube.com/watch?v=buHDqQnVXTQ"
+ ],
+ "story": {
+  "blocos": [
+   "🔴 Bangkok: esplosione e incendio nella raffineria Bangchak, nell'est della capitale.",
+   "Fumo nero visibile da chilometri. Il distretto di Bang Na ha chiesto ai residenti vicini di evacuare.",
+   "Secondo i media thailandesi l'incendio è ora sotto controllo. Nessuna vittima segnalata finora."
+  ]
+ },
+ "fatos": [
+  [
+   "🔴 Bangkok: esplosione e incendio nella raffineria Bangchak, nell'est della capitale."
+  ],
+  [
+   "Fumo nero visibile da chilometri. Il distretto di Bang Na ha chiesto ai residenti vicini di evacuare."
+  ],
+  [
+   "Secondo i media thailandesi l'incendio è ora sotto controllo. Nessuna vittima segnalata finora."
+  ]
+ ],
+ "video": {
+  "arquivo": "videos/20261126-19.mp4",
+  "trechos": [
+   [
+    0,
+    4.6
+   ],
+   [
+    4.6,
+    4.4
+   ],
+   [
+    9.0,
+    5.6
+   ]
+  ],
+  "foco": 0.55,
+  "credito": "Video: MGR Online (CC BY)",
+  "fonte_url": "https://www.youtube.com/watch?v=buHDqQnVXTQ",
+  "licenca": "CC BY"
+ },
+ "fotos": [],
+ "legenda": "Le immagini dell'incendio nella raffineria Bangchak, nell'est di Bangkok, dopo la forte esplosione di oggi. Una colonna di fumo nero si è alzata sulla capitale thailandese e il distretto di Bang Na ha chiesto ai residenti vicini di evacuare. Secondo i media thailandesi l'incendio è ora sotto controllo; finora non risultano vittime e la causa non è stata comunicata.\n\nFonte: France24, Al Jazeera · Video: MGR Online (CC BY)\n\nSeguici @radar_mondo per non perdere le notizie del mondo, ora per ora.\n\n#notizie #mondo #ultimora #bangkok #thailandia"
+}

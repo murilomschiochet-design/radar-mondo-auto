@@ -85,7 +85,13 @@ def main():
         tela({"modo": "cta", "blocos": CTA}, os.path.join(pasta, "cta.png"), 1080, 1350)
         jpg(os.path.join(pasta, "cta.png"), os.path.join(pasta, "cta.jpg"))
 
-    if formato == "reel":
+    vid = item.get("video") if formato == "reel_video" else None
+    if formato == "reel_video" and not (vid and os.path.exists(os.path.join(BASE, vid.get("arquivo", "")))):
+        print("vídeo livre não encontrado: vira reel_texto")
+        formato = "reel_texto"
+    if vid and formato == "reel_video":
+        credito = vid.get("credito", credito)
+    if formato in ("reel", "reel_video"):
         tmp = os.path.join(pasta, "_reel")
         os.makedirs(tmp, exist_ok=True)
         fatos = item.get("fatos") or [[b] for b in item["story"]["blocos"][:3]]
@@ -95,8 +101,31 @@ def main():
         for i, f in enumerate(fatos):
             tela({"modo": "fato", "blocos": f}, os.path.join(tmp, f"fato{i}.png"), 1080, 1920)
         tela({"modo": "cred2", "credito": credito}, os.path.join(tmp, "cred.png"), 1080, 1920)
+        base = os.path.join(tmp, "base.mp4")
+        if vid:   # VÍDEO REAL livre (CC BY de quem filmou / oficial) embaixo da faixa, trechos com fade, sem o som original
+            trechos = vid.get("trechos") or [[0, total]]
+            partes = []
+            for n, (ini, d) in enumerate(trechos):
+                s = os.path.join(tmp, f"v{n}.mp4")
+                ff("-ss", str(ini), "-t", str(d), "-i", os.path.join(BASE, vid["arquivo"]), "-an", "-vf",
+                   f"scale=1080:1300:force_original_aspect_ratio=increase,crop=1080:1300:(iw-1080)/2:(ih-1300)*{vid.get('foco', 0.5)},"
+                   "fps=30,format=yuv420p,setsar=1", "-c:v", "libx264", "-crf", "19", s)
+                partes.append((s, d))
+            ent, filtro, ult, off = [], "", "[0:v]", 0.0
+            for s, _ in partes:
+                ent += ["-i", s]
+            for i in range(1, len(partes)):
+                off += partes[i - 1][1] - 0.4
+                filtro += f"{ult}[{i}:v]xfade=transition=fade:duration=0.4:offset={off:.2f}[x{i}];"
+                ult = f"[x{i}]"
+            if len(partes) == 1:
+                ff(*ent, "-vf", f"tpad=stop_mode=clone:stop_duration={total:.2f}", "-t", f"{total:.2f}", "-c:v", "libx264", "-crf", "19", base)
+            else:
+                ff(*ent, "-filter_complex", filtro.rstrip(";") + f";{ult}tpad=stop_mode=clone:stop_duration={total:.2f}[vv]",
+                   "-map", "[vv]", "-t", f"{total:.2f}", "-c:v", "libx264", "-crf", "19", base)
+            fotos = []
         # fotos embaixo da faixa, andando devagar (sem zoom), divididas no tempo do vídeo
-        parte = total / len(fotos) + (0.8 if len(fotos) > 1 else 0)
+        parte = total / max(len(fotos), 1) + (0.8 if len(fotos) > 1 else 0)
         segs = []
         for i, f in enumerate(fotos):
             cr = (f"crop=1080:1300:(iw-1080)*t/{parte:.2f}:(ih-1300)/2" if i % 2 == 0
@@ -105,8 +134,9 @@ def main():
             ff("-loop", "1", "-t", f"{parte:.2f}", "-i", f["arquivo"], "-vf",
                f"scale=1210:1456:force_original_aspect_ratio=increase,{cr},fps=30,format=yuv420p", "-c:v", "libx264", "-crf", "20", s)
             segs.append(s)
-        base = os.path.join(tmp, "base.mp4")
-        if len(segs) == 1:
+        if vid:
+            pass
+        elif len(segs) == 1:
             os.replace(segs[0], base)
         else:
             entradas, filtro, ult, off = [], "", "[0:v]", 0.0
@@ -132,6 +162,7 @@ def main():
         ff(*ins, "-filter_complex", filtro, "-map", "[v]", "-map", "[a]", "-t", f"{total:.2f}", "-r", "30",
            "-c:v", "libx264", "-crf", "20", "-c:a", "aac", "-b:a", "128k", "-movflags", "+faststart", os.path.join(pasta, "reel.mp4"))
         ff("-ss", "1.2", "-i", os.path.join(pasta, "reel.mp4"), "-frames:v", "1", "-q:v", "2", os.path.join(pasta, "capa.jpg"))
+        formato = "reel"
 
     if formato == "reel_texto":
         # reel no estilo do story: imagem parada com o texto inteiro, 10 s, música baixa
