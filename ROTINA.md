@@ -32,13 +32,26 @@ Você roda de hora em hora, das 06:00 às 23:00 (Roma). A cada rodada: escolhe *
   - `"reel_texto"` **sem foto** (fundo preto) só quando não houver foto livre boa, e **nunca dois seguidos** (veja o `formato` dos últimos itens em `itens/` e `publicados.json`).
   - **Carrossel (`"post"`) OBRIGATÓRIO 2 por dia — nas rodadas das 10h e das 18h (Roma)** (pedido do Murilo em 21/11: o perfil precisa de carrossel pra ficar bonito e com cara de página séria). Nessas duas rodadas, se não houve carrossel nas últimas 5 h (veja `formato` em `publicados.json`), o feed desta rodada é carrossel em vez de reel: escolha a notícia boa da janela que tenha **2 fotos livres** diferentes do assunto (busque com `foto_livre.py` 2–3 termos). Carrossel = foto 1 com o `titulo` + foto 2 com `titulo2` (o fato principal ou o número que impressiona, numa frase de até ~110 caracteres) + o slide fixo "Seguici @radar_mondo" (automático). Com só 1 foto boa, faz carrossel com 1 foto (2 slides). Nas outras rodadas, carrossel só se o último foi há mais de ~5 h e a notícia tem foto forte.
   - `"reel"` com fotos em movimento: quando houver 2–3 fotos livres muito fortes do mesmo assunto.
+  - **`"reel_video"` — VÍDEO REAL (desde 26/11, pedido do Murilo): o MELHOR formato quando existir.** Para toda notícia forte de feed com imagem
+    (explosão, incêndio, desastre, ataque/ação militar, lançamento, acidente, protesto grande), ANTES de escolher foto procure vídeo livre:
+    `python video_livre.py buscar "termo em inglês" "outro termo"` (só lista vídeos marcados Creative Commons, já marcando OFICIAL / SUSPEITO).
+    Serve SÓ: canal OFICIAL (exército, governo, NASA, defesa civil…) ou o PRÓPRIO veículo/pessoa que filmou (ex.: MGR Online filmou o incêndio
+    em Bangkok). NUNCA canal que só reenvia vídeo dos outros (Kanal13, "Daily News Explained", compilações, react, vídeo com logo de outra TV),
+    mesmo marcado CC. Nunca imagem gráfica (corpos, feridos, momento de morte). Vídeo tem que ser DESTE fato (data de hoje/ontem, mesmo lugar).
+    Achou: `python video_livre.py baixar <video_id> <id> <inicio> <fim>` (até 20 s; escolha o trecho mais forte, pule aberturas/cartelas) →
+    OLHE a folha `videos/<id>-folha.jpg` (Read). Se tiver logo de outra emissora, letreiro grande ou não for o fato, desista e siga com foto.
+    No item: `"formato": "reel_video"`, `"fatos"` (3 grupos de 1 frase, como no reel), `"video": {"arquivo": "videos/<id>.mp4",
+    "trechos": [[0, 4.6], [6, 4.4], [12, 5.6]], "foco": 0.5, "credito": "Video: <Canal> (CC BY)", "fonte_url": "<link>", "licenca": "CC BY"}`
+    (trechos = [início, duração] dentro do arquivo cortado, somando ~13–14 s; foco 0–1 = altura do corte) e cite o canal também na `legenda`
+    ("Video: <Canal> (CC BY)"). Se o YouTube não abrir aqui, o script avisa: siga com foto (o robô também cai sozinho para reel_texto se o arquivo faltar).
+    No máximo 3 reel_video por dia (cada vídeo ocupa espaço no repositório).
 - **Foto livre obrigatória** para post/reel: `python foto_livre.py "busca em inglês" 8` (Wikimedia Commons: domínio público, CC0, CC BY, CC BY-SA). Escolha só foto que realmente tenha a ver (o lugar, o objeto, a instituição). Nunca foto de agência (Reuters, AP, Getty, ANSA) nem print de TV/rede social. Se o `foto_livre.py` falhar (ex.: erro 429 do Wikimedia), ele mostra o endereço da busca: abra com WebFetch e escolha pela mesma regra de licença. Sem foto boa → fica só o story.
 
 ## Passo 4 — escrever `itens/<id>.json`
 ```json
 {
  "id": "20261115-06",
- "formato": "story | post | reel | reel_texto",
+ "formato": "story | post | reel | reel_texto | reel_video",
  "chip": "Aviazione",
  "titulo": "Manchete do post/reel, até ~110 caracteres, clara e sem clickbait falso",
  "titulo2": "(só carrossel com 2 fotos) o fato principal ou número forte, numa frase de até ~110 caracteres",
@@ -58,8 +71,8 @@ Você roda de hora em hora, das 06:00 às 23:00 (Roma). A cada rodada: escolhe *
 
 ## Passo 5 — validar e publicar
 ```bash
-python -c "import json,sys;d=json.load(open(sys.argv[1],encoding='utf-8'));assert d['formato'] in ('story','post','reel','reel_texto');assert 1<=len(d['story']['blocos'])<=4;assert d['formato'] in ('story','reel_texto') or (d['titulo'] and d['fotos']);print('ok')" itens/<id>.json
-git add itens/<id>.json && git commit -m "noticia <id>" && git push origin main
+python -c "import json,sys;d=json.load(open(sys.argv[1],encoding='utf-8'));assert d['formato'] in ('story','post','reel','reel_texto','reel_video');assert 1<=len(d['story']['blocos'])<=4;assert d['formato'] in ('story','reel_texto') or (d['formato']=='reel_video' and d['video']['arquivo']) or (d['titulo'] and d['fotos']);print('ok')" itens/<id>.json
+git add itens/<id>.json && (test -f videos/<id>.mp4 && git add videos/<id>.mp4 || true) && git commit -m "noticia <id>" && git push origin main
 ```
 (Se o push falhar por mudanças remotas: `git pull --rebase` e push de novo.)
 
