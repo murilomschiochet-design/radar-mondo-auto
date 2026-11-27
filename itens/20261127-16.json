@@ -1,0 +1,12 @@
+{
+ "id": "20261127-16",
+ "formato": "story",
+ "chip": "Hacker",
+ "titulo": "",
+ "fontes": ["BleepingComputer", "The Record"],
+ "links": ["https://www.bleepingcomputer.com/news/security/sap-confirms-security-incident-after-suspicious-github-activity/"],
+ "story": {"blocos": ["💻 SAP, colosso tedesco del software, conferma un incidente di sicurezza: «attività sospetta» individuata nei suoi sistemi.", "Secondo Der Spiegel (fonti interne, non confermato da SAP), gli aggressori avrebbero rubato token dei dipendenti per copiare e modificare codice su GitHub.", "SAP: «nessuna prova di accesso ai dati aziendali dei clienti». Ambienti colpiti e responsabili: non resi noti."]},
+ "fatos": [],
+ "fotos": [],
+ "legenda": ""
+}
