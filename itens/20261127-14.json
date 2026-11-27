@@ -1,0 +1,12 @@
+{
+ "id": "20261127-14",
+ "formato": "story",
+ "chip": "Hacker",
+ "titulo": "",
+ "fontes": ["The Guardian", "The Record"],
+ "links": ["https://www.theguardian.com/politics/2026/nov/27/dwp-cyber-incident-pensions-benefits-systems-offline", "https://therecord.media/uk-department-work-pensions-cyber-incident"],
+ "story": {"blocos": ["💻 Regno Unito: il Dipartimento per il Lavoro e le Pensioni (DWP) ha messo offline vari servizi dopo un «incidente informatico».", "Secondo il Guardian, quasi tutti i sistemi di pensioni e sussidi sono irraggiungibili. Il DWP assicura che i pagamenti proseguono regolarmente.", "Il DWP lavora con il National Cyber Security Centre per ripristinare i servizi. Natura dell'incidente e responsabili: al momento non resi noti."]},
+ "fatos": [],
+ "fotos": [],
+ "legenda": ""
+}
