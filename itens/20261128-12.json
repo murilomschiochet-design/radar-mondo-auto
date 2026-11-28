@@ -1,0 +1,37 @@
+{
+ "id": "20261128-12",
+ "formato": "reel_texto",
+ "chip": "Mondo",
+ "titulo": "Afghanistan, esplosione accanto a una scuola nel Kunar: almeno 6 studenti morti e 97 feriti",
+ "fontes": [
+  "Al Jazeera",
+  "BBC",
+  "DW"
+ ],
+ "links": [
+  "https://www.aljazeera.com/news/2026/11/28/students-killed-injured-in-school-explosion-in-afghanistans-kunar-region",
+  "https://www.bbc.co.uk/news/articles/ckp80jyz6dl8o",
+  "https://www.dw.com/en/afghanistan-several-killed-in-blast-near-middle-school/a-80084227"
+ ],
+ "story": {
+  "blocos": [
+   "🔴 Afghanistan: esplosione accanto a una scuola media nella provincia orientale di Kunar.",
+   "Secondo il primo bilancio dell'ospedale provinciale: almeno 6 studenti morti e 97 feriti. La BBC riporta 7 morti.",
+   "Il ministero dell'Interno parla di «negligenza»: in una casa vicina era stata stoccata dinamite di persone legate all'attività mineraria."
+  ]
+ },
+ "reel_blocos": [
+  "🔴 ULTIM'ORA: esplosione accanto a una scuola in Afghanistan.",
+  "Provincia di Kunar: almeno 6 studenti morti e 97 feriti, bilancio ancora provvisorio.",
+  "Per il ministero dell'Interno: «negligenza» nello stoccaggio di dinamite di una casa legata all'attività mineraria.",
+  "Squadre di indagine sul posto. Il bilancio potrebbe cambiare."
+ ],
+ "fotos": [
+  {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/5/56/Eastern_Afghanistan.jpg",
+   "credito": "Foto: monneb afghan (CC BY-SA 2.0)",
+   "pos": "50% 50%"
+  }
+ ],
+ "legenda": "Esplosione accanto a una scuola media nella provincia di Kunar, nell'Afghanistan orientale: secondo il primo bilancio dell'ospedale provinciale almeno 6 studenti sono morti e 97 sono rimasti feriti (la BBC parla di 7 morti). Il portavoce del ministero dell'Interno attribuisce lo scoppio a negligenza nello stoccaggio di dinamite in una casa legata all'attività mineraria. I numeri possono cambiare.\n\nFonte: Al Jazeera, BBC, DW\nFoto: monneb afghan (CC BY-SA 2.0)\n\nSeguici @radar_mondo per non perdere le notizie del mondo, ora per ora.\n\n#notizie #mondo #ultimora #afghanistan #kunar"
+}
