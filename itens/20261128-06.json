@@ -1,0 +1,12 @@
+{
+ "id": "20261128-06",
+ "formato": "reel_texto",
+ "chip": "Mondo",
+ "titulo": "Kuwait, drone iraniano uccide due italiani: Tajani parla di drone «made in Iran»",
+ "fontes": ["Euronews", "Al Jazeera", "DW"],
+ "links": ["https://www.euronews.com/2026/11/27/iran-denies-responsibility-for-kuwait-drone-strike-that-killed-two-italians", "https://www.aljazeera.com/news/liveblog/2026/11/28/iran-war-live-italy-says-drone-in-deadly-kuwait-attack-was-made-in-iran"],
+ "story": {"blocos": ["🔴 Kuwait: un attacco con droni contro un centro radar di difesa aerea ha ucciso due italiani, tecnici della Rheinmetall.", "Il ministro degli Esteri Antonio Tajani dice che le indagini kuwaitiane confermano: il drone era «made in Iran».", "Teheran nega ogni responsabilità e si offre di partecipare a un'inchiesta congiunta con Italia e Kuwait."]},
+ "reel_blocos": ["🔴 ULTIM'ORA: due italiani uccisi da un attacco di droni in Kuwait.", "Erano specialisti della Rheinmetall in un centro radar di difesa aerea.", "Tajani: secondo le indagini kuwaitiane, il drone era «made in Iran».", "Teheran nega e propone un'inchiesta congiunta con Italia e Kuwait."],
+ "fotos": [{"url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Kuwait_City_Skyline_3.jpg/1920px-Kuwait_City_Skyline_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail", "credito": "Foto: Zairon (CC BY 4.0)", "pos": "50% 50%"}],
+ "legenda": "Due italiani, specialisti della Rheinmetall, sono morti in un attacco di droni contro un centro radar di difesa aerea in Kuwait. Il ministro Antonio Tajani afferma che le indagini kuwaitiane confermano che il drone era di fabbricazione iraniana. Teheran nega ogni coinvolgimento e si dice pronta a cooperare a un'inchiesta congiunta.\n\nFonte: Euronews, Al Jazeera, DW\nFoto: Zairon (CC BY 4.0)\n\n#notizie #mondo #ultimora #kuwait #iran #tajani\n\nSeguici @radar_mondo per non perdere le notizie del mondo, ora per ora."
+}
